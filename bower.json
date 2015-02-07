@@ -1,0 +1,23 @@
+{
+  "name": "TRY.js",
+  "version": "0.0.1",
+  "authors": [
+    "s-a <stephan.ahlf@googlemail.com>"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "license": "all rights reserved",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "",
+    "threejs" : ""
+  }
+}

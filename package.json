@@ -1,0 +1,21 @@
+{
+  "name": "TRY.js",
+  "author": "Stephan Ahlf",
+  "copyright": "ALL RIGHTS RESERVED",
+  "preferGlobal": false,
+  "description": "kasse",
+  "repository" : "",
+  "version": "0.0.1",
+  "scripts": {
+    "test": "mocha"
+  },
+  "engines": {
+    "node": ">=0.10.33"
+  },
+  "dependencies": {
+
+  },
+  "devDependencies": {
+
+  }
+}

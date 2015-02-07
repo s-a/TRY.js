@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>TRY.js</title>
+	<meta charset="utf-8">
+	<meta author="Stephan Ahlf">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<link rel="stylesheet" href="lib/magnific-popup.css"> 
+ 	<link rel="stylesheet" media="all" href="lib/mocha.css">
+
+	<script type="x-shader/x-vertex" id="vertexShader">
+		varying vec3 vWorldPosition;
+		void main() {
+			vec4 worldPosition = modelMatrix * vec4( position, 1.0 );
+			vWorldPosition = worldPosition.xyz;
+			gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+		}
+	</script>
+	<script type="x-shader/x-fragment" id="fragmentShader">
+		uniform vec3 topColor;
+		uniform vec3 bottomColor;
+		uniform float offset;
+		uniform float exponent;
+		varying vec3 vWorldPosition;
+		void main() {
+			float h = normalize( vWorldPosition + offset ).y;
+			gl_FragColor = vec4( mix( bottomColor, topColor, max( pow( max( h, 0.0 ), exponent ), 0.0 ) ), 1.0 );
+		}
+	</script>
+	<style type="text/css">
+		body{
+			overflow: hidden;
+			background-color: #0D0D0D;
+		}
+
+		pre.error{
+			display: none !important;
+		}
+		.white-popup {
+		  position: relative;
+		  background: #FFF;
+		  padding: 20px;
+		  width: auto;
+		  max-width: 500px;
+		  margin: 20px auto;
+		}
+
+		.white-popup ul li{
+			text-decoration: underline;
+			cursor: pointer;
+		}
+
+		.white-popup ul li:hover{
+			text-decoration: none;
+		}
+
+		#mocha-stats{
+			position: initial;
+		}
+
+		#donate, #t{
+			
+		}
+	</style>
+</head>
+<body> 
+	<canvas id="maze"></canvas>
+	<div style="display:none;">
+		<div id="donate"  class="white-popup">
+			<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+			<input type="hidden" name="cmd" value="_s-xclick">
+			<input type="hidden" name="hosted_button_id" value="39FX7BEP8AN6J">
+			<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG_global.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
+			<img alt="" border="0" src="https://www.paypalobjects.com/de_DE/i/scr/pixel.gif" width="1" height="1">
+			</form>		
+		</div>
+		<div id="t" class="white-popup">
+			<div id="mocha"><p><a href=".">Index</a></p></div>
+			<div id="messages"></div>
+			<div id="fixtures"></div>
+		</div>
+	</div>
+	<div id="ThreeJS" style="position: absolute; left:0px; top:0px"></div>
+	<script src="lib/mocha.js"></script>
+	<script>mocha.setup('bdd')</script>
+	 <script>
+	   function assert(expr, msg) {
+	     if (!expr) throw new Error(msg || 'failed');
+	   }
+	 </script>
+  	<script src="js/Three.js"></script>
+	<script src="js/Detector.js"></script>
+	<script src="js/Stats.js"></script>
+	<script src="js/OrbitControls.js"></script>
+	<script src="js/THREEx.KeyboardState.js"></script>
+	<script src="js/THREEx.FullScreen.js"></script>
+	<script src="js/THREEx.WindowResize.js"></script>
+	<script src="js/tween.js"></script>
+	<script type='text/javascript' src='js/DAT.GUI.min.js'></script> 
+	<script src="lib/jquery-2.1.3.min.js"></script>
+	<script src="lib/underscore-min.js"></script>
+	<script src="lib/maze/array.js"></script>
+	<script src="lib/maze/cell.js"></script>
+	<script src="lib/maze/graph.js"></script>
+	<script src="lib/maze/mazeGenerator.js"></script>
+	<script src="lib/maze/maze.js"></script> 
+	<script src="lib/jquery.magnific-popup.min.js"></script>
+	<script src="lib/should.min.js"></script>
+	<script src="lib/try/engine.js"></script>
+	<script src="lib/try/robot.js"></script>
+	<script src="lib/try/channel.js"></script>
+	<script src="lib/try/gui.js"></script>
+</body>
+</html>

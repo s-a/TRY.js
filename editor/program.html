@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"> 
+    <title></title>
+    <meta author="Stephan Ahlf">
+    
+    <link rel="stylesheet" href="bower_components/codemirror/theme/monokai.css">
+    <link rel="stylesheet" href="bower_components/codemirror/lib/codemirror.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/codemirror/addon/lint/lint.css">
+    <script src="//apis.google.com/js/api.js"></script>
+    <script src="//www.google.com/jsapi"></script>
+    <script src="realtime-client-utils.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/codemirror/lib/codemirror.js"></script>
+    <script src="bower_components/codemirror/mode/javascript/javascript.js"></script>
+
+    <script src="jsonlint.js"></script>
+    <script src="bower_components/codemirror/addon/lint/lint.js"></script>
+    <script src="bower_components/codemirror/addon/lint/javascript-lint.js"></script>
+    <script src="bower_components/codemirror/addon/lint/json-lint.js"></script>
+    <script src="bower_components/codemirror/addon/edit/closebrackets.js"></script>
+    <script src="bower_components/codemirror/keymap/sublime.js"></script>
+    <script src="bower_components/js-beautify/js/lib/beautify.js"></script>
+
+    <script src="editor-script.js"></script>
+    <style type="text/css">
+      body, html{
+        background-color: #272822;
+        color: #e6db74;
+        height: 100%;
+      }
+      .dg.ac {
+        z-index: 1000 !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid" style="height: 100%;">
+
+      <div class="row-fluid">
+          <button id="btn-auth" class="btn btn-primary disabled">Authorize</button>
+      </div>
+      <div class="row-fluid" style="height: 100%;">
+        <div id="editor" class="col-xs-12" ></div>
+      </div>
+    </div>
+    <script type='text/javascript' src='../js/DAT.GUI.min.js'></script>
+    <script src="gui.js"></script>
+
+  </body>
+</html>
