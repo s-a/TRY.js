@@ -19,7 +19,7 @@ So far this web app is developed and tested with Google Chrome. Anyway you are w
  - does not need an installation
  - is free!
 
-![TRY.js](try.js/screenshot.png?raw=true "TRY.js")
+![TRY.js](/screenshot.png?raw=true "TRY.js")
 
 [TRY JavaScript now!](http://s-a.github.io/try.js "")
  
