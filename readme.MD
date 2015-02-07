@@ -21,7 +21,7 @@ So far this web app is developed and tested with Google Chrome. Anyway you are w
 
 ![TRY.js](/screenshot.png?raw=true "TRY.js")
 
-[TRY JavaScript now!](http://s-a.github.io/try.js "")
+[TRY JavaScript now!](http://s-a.github.io/TRY.js/ "")
  
 ### Load example presets and the way to share your work on GitHub
 A click on the ```Package / Open``` menu item will show a list of avilable examples.
@@ -38,7 +38,7 @@ A click on the ```Program / Edit``` menu item will open an editor. Simply press 
 ### [Test API](/docs/tests.MD) - Create and edit tests
 A click on the ```Tests / Edit``` menu item will open an editor. Simply press ```Document / New``` to assign current test suite code to code window. After writing your code you need to click on ```AssignCode``` menu item. This will load your current tests into the environment. One of many examples [basic-tests.js](https://github.com/s-a/examples.try.js/blob/master/first%20steps/basic-tests.js).
 
-### [Donate](http://s-a.github.io/try.js) - The hard work
+### [Donate](http://s-a.github.io/TRY.js/) - The hard work
 A click on the ```About / Donate``` menu item will open a donation window.
 
 ### Credits
