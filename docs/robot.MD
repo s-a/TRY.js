@@ -1,5 +1,5 @@
 # Robot API description
-A ```Robot``` [programm](https://github.com/s-a/examples.try.js/blob/master/first%20steps/basic-program.js) runs allways in context of the robot himself. For this reason we allways use the keyord ```this``` to access the robots methods. Maybe the most important method of Robot is the ```.move()``` method. To move the robot forward within an programm you need to call ```this.move("forward")```. Keep in mind that the robot can only execute on command at the time. For this reason you have to use the callback methods to determine if the robot has completed a running command. See ***Synchronous methods*** to read more about this topic.
+A ```Robot``` [programm](https://github.com/s-a/examples.try.js/blob/master/first%20steps/basic-program.js) runs allways in context of the robot himself. For this reason we allways use the keyord ```this``` to access the robots methods. Maybe the most important method of Robot is the ```.move()``` method. To move the robot forward within an programm you need to call ```this.move("forward")```. Keep in mind that the robot can only execute one command at the time. For this reason you have to use the callback methods to determine if the robot has completed a running command. It is possible with the ```onComplete``` callback method. See ***[Synchronous methods](#synchronous-code)*** to read more about this topic.
 
 ---
 ### Robot.move()
@@ -101,9 +101,10 @@ if (this.sensor.atHome()){
 
 ### Robot.sensor.canMove()
 Determines if the robot is able to move.
- - ***Returns*** Boolean
+ - ***Returns*** Boolean  
  - ***Parameters***
    - ```direction``` (String) ["forward"|"backward"]
+
 ---
 
 ### Robot.sensor.canTurn()
