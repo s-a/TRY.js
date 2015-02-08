@@ -83,8 +83,8 @@
 		}
 
 		.menu__button{
-			width: 32px;
-			height: 32px;
+			width: 22px;
+			height: 22px;
 		}
 		.menu{ 
 			background-color: #F8F8FF;
@@ -101,27 +101,21 @@
 
 		core-icon {
 			color: #0D0D0D;
-		}		
-		core-icon[icon="android"] {
-			color: #a4c639;
-		}		
+		}
+
 	</style>
 </head>
 <body> 
-	<!--  -->
-<core-menu-button id="state" icon="menu">
-	<div class="menu"> 
-		<a href="javascript:void(0)" title="Share" id="shareBtn">
-			<core-icon class="menu__button" icon="social:share" title="Share this page"></core-icon>
-		</a>
-		<core-icon class="menu__button" icon="android"></core-icon>
-
-	  	<core-icon class="menu__button" icon="device:battery-20" label="Settings"></core-icon>
-	  	<core-icon class="menu__button" icon="device:battery-alert" label="Settings"></core-icon>
-	</div>
-</core-menu-button>
-
-
+	<core-menu-button id="state" icon="menu">
+		<div class="menu"> 
+			<a href="javascript:void(0)" title="Share" id="shareBtn">
+				<core-icon class="menu__button" icon="social:share" title="Share this page"></core-icon>
+			</a>
+			<core-icon id="program__run__state" class="menu__button" icon="android"></core-icon>
+		  	<core-icon id="robot__energy" class="menu__button" label="Robot energy status"></core-icon>
+		  	
+		</div>
+	</core-menu-button>
 	<canvas id="maze"></canvas>
 	<div style="display:none;">
 		<div id="share" class="white-popup"></div>
