@@ -27,19 +27,20 @@ So far this web app is developed and tested with Google Chrome. Anyway you are w
 A click on the ```Package / Open``` menu item will show a list of avilable examples.
 Visit https://github.com/s-a/channel.try.js for more information.
 
-### [Environment API](/docs/environment.MD) - Create and edit your own environments
-A click on the ```Environment``` menu item will open an editor with a property editor to change the current environment meta data. In this view you do not need to write code manually. Simply press `Document / New` to assign current environment meta data to code window. One of many examples [basic-environment.json](https://github.com/s-a/examples.try.js/blob/master/first%20steps/basic-environment.json).
+### Environment - Create and edit your own environments
+A click on the ```Environment``` menu item will open an editor with a property editor to change the current environment meta data. In this view ***you do not need to write code*** manually. Simply press `Document / New` to assign current environment meta data to code window. Example: [basic-environment.json](https://github.com/s-a/examples.try.js/blob/master/first%20steps/basic-environment.json).
 
 
 ### [Robot API](/docs/robot.MD) - Create and edit your own robot programs
-A click on the ```Program / Edit``` menu item will open an editor. Simply press ```Document / New``` to assign current robot program code to code window. After writing your code you need to click on ```AssignCode``` menu item. This will load your current program into the robot. One of many examples [basic-program.js](https://github.com/s-a/examples.try.js/blob/master/first%20steps/basic-program.js).  
+A click on the ```Program / Edit``` menu item will open an editor. Simply press ```Document / New``` to assign current robot program code to code window. After writing your code you need to click on ```AssignCode``` menu item. This will load your current program into the robot. Example: [basic-program.js](https://github.com/s-a/examples.try.js/blob/master/first%20steps/basic-program.js).  
 
 
 ### [Test API](/docs/tests.MD) - Create and edit tests
-A click on the ```Tests / Edit``` menu item will open an editor. Simply press ```Document / New``` to assign current test suite code to code window. After writing your code you need to click on ```AssignCode``` menu item. This will load your current tests into the environment. One of many examples [basic-tests.js](https://github.com/s-a/examples.try.js/blob/master/first%20steps/basic-tests.js).
+A click on the ```Tests / Edit``` menu item will open an editor. Simply press ```Document / New``` to assign current test suite code to code window. After writing your code you need to click on ```AssignCode``` menu item. This will load your current tests into the environment. Example [basic-tests.js](https://github.com/s-a/examples.try.js/blob/master/first%20steps/basic-tests.js).
 
 ### [Donate](http://s-a.github.io/TRY.js/) - The hard work
 A click on the ```About / Donate``` menu item will open a donation window.
+
 
 ### Credits
  - [Random maze generator](https://github.com/felipecsl/random-maze-generator) created by [felipecsl](https://github.com/felipecsl) 
