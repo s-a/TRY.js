@@ -21,7 +21,7 @@ So far this web app is developed and tested with Google Chrome. Anyway you are w
 
 ![TRY.js](/screenshot.png?raw=true "TRY.js")
 
-[TRY JavaScript now!](http://s-a.github.io/TRY.js/ "")
+***[TRY JavaScript now](http://s-a.github.io/TRY.js/ "") and create something awesome!***
  
 ### Load example presets and the way to share your work on GitHub
 A click on the ```Package / Open``` menu item will show a list of avilable examples.
@@ -43,6 +43,10 @@ A click on the ```About / Donate``` menu item will open a donation dialog.
 
 ### [Share it on your social network](http://s-a.github.io/TRY.js/)
 A click on the ```social share icon``` in the upper left corner item will open a share dialog.
+
+
+### [Trouble shooting, bug reports, ideas](https://github.com/s-a/TRY.js/issues)
+Feel free to write with your thoughts.
 
 
 ### Credits
