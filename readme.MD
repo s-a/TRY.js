@@ -11,7 +11,7 @@ TRY.js gives an overview about synchronious and asynchronious codes as well as t
 
 To use the TRY.js code editor you need a [Google™ account](https://accounts.google.com/SignUp "Create your Google Account"). All you work will be saved on [Google Drive™](https://drive.google.com) where you can share your work with your friends. To share your work with the world wide web visit [channel.try.js](https://github.com/s-a/channel.try.js) and follow the instructions.
 
-So far this web app is developed and tested with Google Chrome. Anyway you are welcome to send possible [bug reports](https://github.com/s-a/try.js/issues) and/or [fixes](https://github.com/s-a/try.js).
+So far this web app is developed and ***tested with Google Chrome***. Anyway you are welcome to send possible [bug reports](https://github.com/s-a/try.js/issues) and/or [fixes](https://github.com/s-a/try.js).
 
 ### TRY.js ...
 
