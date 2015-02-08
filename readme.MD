@@ -6,7 +6,7 @@
 TRY.js is supposed to programm a virtual robot which moves in a 3D environment able to pick up and unload objects. The program gives beginners a first insight into the world of computer programming.
 
 Due to the ease of use and the limited instruction set TRY.js is well suited for the introduction to programming, especially for learning the programming language JavaScript.
-
+ 
 TRY.js gives an overview about synchronious and asynchronious codes as well as test driven development.
 
 To use the TRY.js code editor you need a [Google™ account](https://accounts.google.com/SignUp "Create your Google Account"). All you work will be saved on [Google Drive™](https://drive.google.com) where you can share your work with your friends. To share your work with the world wide web visit [channel.try.js](https://github.com/s-a/channel.try.js) and follow the instructions.
