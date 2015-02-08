@@ -3,7 +3,7 @@
 ![Google Drive™](/drive_outline-small.png?raw=true "Google Drive™")
 
 
-TRY.js is a deliberately rudimentary held programming language to facilitate entry into the algorithms. It is supposed to programm a virtual robot which moves in a 3D environment able to pick up and unload objects. The program gives beginners a first insight into the world of computer programming.
+TRY.js is supposed to programm a virtual robot which moves in a 3D environment able to pick up and unload objects. The program gives beginners a first insight into the world of computer programming.
 
 Due to the ease of use and the limited instruction set TRY.js is well suited for the introduction to programming, especially for learning the programming language JavaScript.
 
@@ -42,7 +42,7 @@ A click on the ```Tests / Edit``` menu item will open an editor. Simply press ``
 A click on the ```social share icon``` in the upper left corner item will open a share dialog.
 
 ### [Trouble shooting, bug reports, ideas](https://github.com/s-a/TRY.js/issues)
-Feel free to write with your thoughts.
+Feel free to write me your thoughts.
 
 ### Credits
  - [Random maze generator](https://github.com/felipecsl/random-maze-generator) created by [felipecsl](https://github.com/felipecsl) 
