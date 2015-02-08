@@ -44,9 +44,8 @@ A click on the ```social share icon``` in the upper left corner item will open a
 ### [Trouble shooting, bug reports, ideas](https://github.com/s-a/TRY.js/issues)
 Feel free to write me your thoughts.
 
-### Credits
- - [Random maze generator](https://github.com/felipecsl/random-maze-generator) created by [felipecsl](https://github.com/felipecsl) 
-
 ### [Donate](http://s-a.github.io/TRY.js/)
 A click on the ```About / Donate``` menu item will open a donation dialog.
 
+### Credits
+ - [Random maze generator](https://github.com/felipecsl/random-maze-generator) created by [felipecsl](https://github.com/felipecsl) 
