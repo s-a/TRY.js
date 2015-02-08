@@ -68,6 +68,20 @@ this.run(10, function(){
 ```
 ---
 
+### Robot.charge()
+Charges the robot battery.
+ - ***Returns*** Boolean
+ - ***Parameters***
+   - ```onComplete``` (Function) Optional callback method.
+
+##### Example
+```javascript
+if (this.charge()){
+    alert("The robot is in a energy box!");
+});  
+```
+---
+
 
 ## Robot.sensor  
 The robot has several sensors that allow him to perceive its environment.
@@ -84,21 +98,19 @@ if (this.sensor.atHome()){
 });  
 ```
 ---
+
 ### Robot.sensor.canMove()
 Determines if the robot is able to move.
  - ***Returns*** Boolean
  - ***Parameters***
    - ```direction``` (String) ["forward"|"backward"]
 ---
+
 ### Robot.sensor.canTurn()
 Determines if the robot is able to rotate.
  - ***Returns*** Boolean
  - ***Parameters***
    - ```direction``` (String) ["left"|"right"]
-
-
-
-
 
 
 ---
