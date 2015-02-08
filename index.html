@@ -61,12 +61,28 @@
 		#donate, #t{
 			
 		}
+
+		#shareBtn {
+			position: absolute;
+			top: 40px;
+			left: 40px;
+			z-index: 100; 
+		}
+		.social_share_privacy_area li {
+			width: 240px;
+		}
+		#share{
+			height:300px;
+		}
 	</style>
 </head>
 <body> 
+	<a id="shareBtn" href="#share" title="Share"><img src="share.png"></a>
+	
 	<canvas id="maze"></canvas>
 	<div style="display:none;">
-		<div id="donate"  class="white-popup">
+		<div id="share" class="white-popup"></div>
+		<div id="donate" class="white-popup">
 			<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 			<input type="hidden" name="cmd" value="_s-xclick">
 			<input type="hidden" name="hosted_button_id" value="39FX7BEP8AN6J">
@@ -106,9 +122,26 @@
 	<script src="lib/maze/maze.js"></script> 
 	<script src="lib/jquery.magnific-popup.min.js"></script>
 	<script src="lib/should.min.js"></script>
+	<script type="text/javascript" src="lib/share/javascripts/socialshareprivacy.js"></script>
+	<script type="text/javascript" src="lib/share/javascripts/modules/buffer.js"></script>
+	<script type="text/javascript" src="lib/share/javascripts/modules/disqus.js"></script>
+	<script type="text/javascript" src="lib/share/javascripts/modules/facebook.js"></script>
+	<script type="text/javascript" src="lib/share/javascripts/modules/flattr.js"></script>
+	<script type="text/javascript" src="lib/share/javascripts/modules/gplus.js"></script>
+	<script type="text/javascript" src="lib/share/javascripts/modules/linkedin.js"></script>
+	<script type="text/javascript" src="lib/share/javascripts/modules/mail.js"></script>
+	<script type="text/javascript" src="lib/share/javascripts/modules/pinterest.js"></script>
+	<script type="text/javascript" src="lib/share/javascripts/modules/reddit.js"></script>
+	<script type="text/javascript" src="lib/share/javascripts/modules/stumbleupon.js"></script>
+	<script type="text/javascript" src="lib/share/javascripts/modules/tumblr.js"></script>
+	<script type="text/javascript" src="lib/share/javascripts/modules/twitter.js"></script>
+	<script type="text/javascript" src="lib/share/javascripts/modules/xing.js"></script>
+	<script type="text/javascript" src="lib/share/javascripts/modules/delicious.js"></script>
+	<script type="text/javascript" src="lib/share/javascripts/modules/hackernews.js"></script>	
 	<script src="lib/try/engine.js"></script>
 	<script src="lib/try/robot.js"></script>
 	<script src="lib/try/channel.js"></script>
 	<script src="lib/try/gui.js"></script>
+
 </body>
 </html>
