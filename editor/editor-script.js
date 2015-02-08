@@ -180,7 +180,6 @@
       to = editor.indexFromPos(changeObj.to);
       text = changeObj.text.join('\n');
       if (to - from > 0) {
-        console.log("markdown.removeRange(" + from + ", " + to + ")");
         markdown.removeRange(from, to);
       }
       if (text.length > 0) {
@@ -190,7 +189,6 @@
         } catch (e) {
         } finally {
         }
-        console.log("markdown.insertString(" + from + ", '" + text + "')");
         return markdown.insertString(from, text);
 
       }

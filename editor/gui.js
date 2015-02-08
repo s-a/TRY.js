@@ -23,7 +23,9 @@
 		position : {
 			x : 0,
 			z : 0
-		}
+		},
+		energy: window.opener.robotConfigs.energy
+
 	}
 
 	var homeBoxConfig = window.homeBoxConfig = {
@@ -53,6 +55,7 @@
 	}
 
 	var getEnvironmentMeta = window.getEnvironmentMeta = function() {
+		robotConfig.energy = window.opener.robotConfigs.energy;
 		//window.opener.robot.program.stop();
 		var wallMetaData = engine.wall.meta();
 		var source = {
@@ -60,7 +63,8 @@
 				position : {
 					x : engine.android.position.x,
 					z : engine.android.position.z
-				}
+				},
+				energy : window.opener.robotConfigs.energy
 			},
 			homeBox : {
 				position : {
@@ -177,6 +181,18 @@
 			folderSelectedWall.add( boxConfig.scale, 'x', 5, 10000 ).step(10).name("ScaleX").listen().onChange(refreshWallGeometry);
 			folderSelectedWall.add( boxConfig.scale, 'y', 50, 100 ).step(10).name("ScaleY").listen().onChange(refreshWallGeometry);
 			folderSelectedWall.add( boxConfig.scale, 'z', 5, 10000 ).step(10).name("ScaleZ").listen().onChange(refreshWallGeometry);
+
+
+			folderRobot.add( robotConfig.energy, 'current',0).step(1).name("CurrentEnergy").listen().onChange( function(){
+			   	window.opener.robotConfigs.energy.current = robotConfig.energy.current;
+			  	window.opener.refreshRobotEnergyStatus();
+			  	refreshWallMetaSourceCode();
+			});
+			folderRobot.add( robotConfig.energy, 'max',0).step(1).name("MaxEnergy").listen().onChange( function(){
+			   	window.opener.robotConfigs.energy.max = robotConfig.energy.max;
+			  	window.opener.refreshRobotEnergyStatus();
+			  	refreshWallMetaSourceCode();
+			});
 
 			folderRobot.add( robotConfig.position, 'x').name("PositionX").listen().onChange( function(){
 			   	engine.android.position.x = robotConfig.position.x;
