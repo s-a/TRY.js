@@ -38,8 +38,11 @@ A click on the ```Program / Edit``` menu item will open an editor. Simply press 
 ### [Test API](/docs/tests.MD) - Create and edit tests
 A click on the ```Tests / Edit``` menu item will open an editor. Simply press ```Document / New``` to assign current test suite code to code window. After writing your code you need to click on ```AssignCode``` menu item. This will load your current tests into the environment. Example [basic-tests.js](https://github.com/s-a/examples.try.js/blob/master/first%20steps/basic-tests.js).
 
-### [Donate](http://s-a.github.io/TRY.js/) - The hard work
-A click on the ```About / Donate``` menu item will open a donation window.
+### [Donate](http://s-a.github.io/TRY.js/)
+A click on the ```About / Donate``` menu item will open a donation dialog.
+
+### [Share it on your social network](http://s-a.github.io/TRY.js/)
+A click on the ```social share icon``` in the upper left corner item will open a share dialog.
 
 
 ### Credits
