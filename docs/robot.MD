@@ -105,6 +105,17 @@ Determines if the robot is able to move.
  - ***Parameters***
    - ```direction``` (String) ["forward"|"backward"]
 
+##### Example
+```javascript
+if (this.canMove("forward")){
+  this.move("forward", function(){
+      alert("Move completed!");
+  });
+} else {
+  alert("Cannot move :O(");
+}
+```
+
 ---
 
 ### Robot.sensor.canTurn()
@@ -113,6 +124,16 @@ Determines if the robot is able to rotate.
  - ***Parameters***
    - ```direction``` (String) ["left"|"right"]
 
+##### Example
+```javascript
+if (this.canTurn("left")){
+  this.turn("left", function(){
+      alert("Turn completed!");
+  });
+} else {
+  alert("Cannot rotate :O(");
+}
+```
 
 ---
 ## Synchronous code  
