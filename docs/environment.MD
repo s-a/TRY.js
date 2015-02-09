@@ -2,7 +2,7 @@
 
 A click on the ```Environment``` menu item will open an editor with a property editor to change the current environment meta data. In this view ***you do not need to write code*** manually. Press `Document / New` to create a new Google Drive document.  
 
-### A simple JSON file declares e TRY.js environment
+### A simple JSON file declares a TRY.js environment
 
 ##### Example
 ```javascript

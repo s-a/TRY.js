@@ -3,7 +3,7 @@
 A click on the ```Tests / Edit``` menu item will open an editor. Press `Document / New` to create a new Google Drive document. After writing your code you need to click on the ```AssignCode``` menu item. This will load your current tests into the environment.  
 
 
-The test suite is based on [Mocha.js](http://mochajs.org/) and [should.js](http://unitjs.com/guide/should-js.html). They provide a way to declare very good human readable test suites.
+The test suite is based on [Mocha.js](http://mochajs.org/) and [Should.js](http://unitjs.com/guide/should-js.html). They provide a way to declare very good human readable test suites.
 
 
 ##### Example
