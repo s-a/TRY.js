@@ -43,7 +43,21 @@
       showCursorWhenSelecting: true,
     });
     window.editor = _editor;
-    _editor.setValue("");
+    switch(codeMode){
+      case "environment":
+        var t = window.getEnvironmentMetaSourceCode(window.getEnvironmentMeta());
+        _editor.setValue(t);
+        break;
+      case "program":
+        _editor.setValue(window.opener.robot.program.rawCode());
+        break;
+      case "tests":
+        _editor.setValue(window.opener.tests.program.rawCode());
+        break;
+      default:
+        _editor.setValue("");
+        break;
+    }
     _editor.setSize("100%", "100%");
     _client = window._client = new rtclient.RealtimeLoader({
       appId: APPID,
