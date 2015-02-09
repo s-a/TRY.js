@@ -191,13 +191,13 @@
 			folderRobot.add( robotConfig.energy, 'current',0).step(1).name("CurrentEnergy").listen().onChange( function(){
 			   	window.opener.robotConfigs.energy.current = robotConfig.energy.current;
 			  	window.opener.refreshRobotEnergyStatus();
-	  			window.opener.robot.program.stop();
+	  			//window.opener.robot.program.stop();
 			  	refreshWallMetaSourceCode();
 			});
 			folderRobot.add( robotConfig.energy, 'max',0).step(1).name("MaxEnergy").listen().onChange( function(){
 			   	window.opener.robotConfigs.energy.max = robotConfig.energy.max;
 			  	window.opener.refreshRobotEnergyStatus();
-	  			window.opener.robot.program.stop();
+	  			//window.opener.robot.program.stop();
 			  	refreshWallMetaSourceCode();
 			});
 
