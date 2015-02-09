@@ -19,3 +19,4 @@
   - robot gets energy 
   - robot can move through walls (x times [robot is transparent...])
   - robot can destroy walls (x times)
+  - halo efx for black mater balls and energy stations
