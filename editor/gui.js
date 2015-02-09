@@ -87,6 +87,7 @@
 	}
 
 	var refreshWallMetaSourceCode = window.refreshWallMetaSourceCode = function() {
+
 		var source = getEnvironmentMeta();
 		updateSourceCode(source);
 	}
@@ -116,6 +117,7 @@
 		removeWall : function() {
 			if (engine.selected){
 				engine.wall.remove(engine.selected);
+				window.opener.robot.program.stop();
 				refreshWallMetaSourceCode();
 				engine.selected = null;
 			} else {
@@ -158,6 +160,7 @@
 	var refreshWallGeometry = function(){
 	   	engine.wall.remove(engine.selected);
 	   	engine.wall.add(boxConfig);
+		window.opener.robot.program.stop();
 	  	refreshWallMetaSourceCode();
 	}
 
@@ -171,12 +174,14 @@
 
 
 			folderSelectedWall.add( boxConfig.position, 'x' ).step(10).name("PositionX").listen().onChange( function(){
-			  engine.selected.position.x = (+boxConfig.position.x);
-			  refreshWallMetaSourceCode();
+			  	engine.selected.position.x = (+boxConfig.position.x);
+	  			window.opener.robot.program.stop();
+			  	refreshWallMetaSourceCode();
 			});
 			folderSelectedWall.add( boxConfig.position, 'z' ).step(10).name("PositionZ").listen().onChange( function(){
-			  engine.selected.position.z = (+boxConfig.position.z);
-			  refreshWallMetaSourceCode();
+			  	engine.selected.position.z = (+boxConfig.position.z);
+		  		window.opener.robot.program.stop();
+			  	refreshWallMetaSourceCode();
 			});
 			folderSelectedWall.add( boxConfig.scale, 'x', 5, 10000 ).step(10).name("ScaleX").listen().onChange(refreshWallGeometry);
 			folderSelectedWall.add( boxConfig.scale, 'y', 50, 100 ).step(10).name("ScaleY").listen().onChange(refreshWallGeometry);
@@ -186,29 +191,35 @@
 			folderRobot.add( robotConfig.energy, 'current',0).step(1).name("CurrentEnergy").listen().onChange( function(){
 			   	window.opener.robotConfigs.energy.current = robotConfig.energy.current;
 			  	window.opener.refreshRobotEnergyStatus();
+	  			window.opener.robot.program.stop();
 			  	refreshWallMetaSourceCode();
 			});
 			folderRobot.add( robotConfig.energy, 'max',0).step(1).name("MaxEnergy").listen().onChange( function(){
 			   	window.opener.robotConfigs.energy.max = robotConfig.energy.max;
 			  	window.opener.refreshRobotEnergyStatus();
+	  			window.opener.robot.program.stop();
 			  	refreshWallMetaSourceCode();
 			});
 
 			folderRobot.add( robotConfig.position, 'x').name("PositionX").listen().onChange( function(){
 			   	engine.android.position.x = robotConfig.position.x;
+			   	window.opener.engine.originalBotPosition.x = robotConfig.position.x;
 			  	refreshWallMetaSourceCode();
 			});
 			folderRobot.add( robotConfig.position, 'z').name("PositionZ").listen().onChange( function(){
 			   	engine.android.position.z = robotConfig.position.z;
+			   	window.opener.engine.originalBotPosition.z = robotConfig.position.z;
 			  	refreshWallMetaSourceCode();
 			});
 
 			folderHomeBox.add( homeBoxConfig, 'x').name("PositionX").listen().onChange( function(){
 			   	engine.homeBox.position.x = homeBoxConfig.x;
+	   			window.opener.robot.program.stop();
 			  	refreshWallMetaSourceCode();
 			});
 			folderHomeBox.add( homeBoxConfig, 'z').name("PositionZ").listen().onChange( function(){
 			   	engine.homeBox.position.z = homeBoxConfig.z;
+	   			window.opener.robot.program.stop();
 			  	refreshWallMetaSourceCode();
 			});
 
