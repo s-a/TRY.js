@@ -37,7 +37,7 @@
       theme: "monokai",
       lineNumbers: true,
       lineWrapping: true,
-      readOnly: true,
+      readOnly: false,
       keyMap: "sublime",
       autoCloseBrackets: true, 
       showCursorWhenSelecting: true,
@@ -139,7 +139,7 @@
     });
     
     _markdown = doc.getModel().getRoot().get('markdown');
-    _editor.setOption('readOnly', false);
+    //_editor.setOption('readOnly', false);
     var txt = (_markdown.getText());
     _editor.setValue(txt);
 
