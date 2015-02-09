@@ -103,15 +103,24 @@
 			color: #0D0D0D;
 		}
 
+		.menu a {
+			text-decoration:  none;
+		}
+
 	</style>
 </head>
 <body> 
 	<core-menu-button id="state" icon="menu">
 		<div class="menu"> 
+			<a href="https://github.com/s-a/try.js#tryjs-beta" target="_blank">
+				<core-icon class="menu__button" icon="social:school" title="Guides & Resources"></core-icon>
+			</a>
 			<a href="javascript:void(0)" title="Share" id="shareBtn">
 				<core-icon class="menu__button" icon="social:share" title="Share this page"></core-icon>
 			</a>
-			<core-icon id="program__run__state" class="menu__button" icon="android" title="Indicates if a robot program is running"></core-icon>
+			<a href="https://github.com/s-a/TRY.js/blob/master/docs/robot.MD" target="_blank" title="Robot API developer guide">
+				<core-icon id="program__run__state" class="menu__button" icon="android"></core-icon>
+			</a>
 		  	<core-icon id="robot__energy" class="menu__button" label="Robot energy status"></core-icon>
 		  	
 		</div>
