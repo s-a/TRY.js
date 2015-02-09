@@ -9,7 +9,7 @@ Due to the ease of use and the limited instruction set TRY.js is well suited for
  
 TRY.js gives an overview about [synchronious and asynchronious codes](https://github.com/s-a/TRY.js/blob/development/docs/robot.MD) as well as [test driven development](/docs/tests.MD).
 
-All you work can be saved on [Google Drive™](https://drive.google.com) where you can share your work with your friends. You need a [Google™ account](https://accounts.google.com/SignUp "Create your Google Account") to use this feature.   
+All your work can be saved on [Google Drive™](https://drive.google.com) where you can share your work with your friends. You need a [Google™ account](https://accounts.google.com/SignUp "Create your Google Account") to use this feature.   
 To share your work with a broader community visit [channel.try.js](https://github.com/s-a/channel.try.js) and follow the instructions.
 
 So far this web app is developed and ***tested with Google Chrome***. Anyway you are welcome to send possible [bug reports](https://github.com/s-a/try.js/issues) and/or [fixes](https://github.com/s-a/try.js).
