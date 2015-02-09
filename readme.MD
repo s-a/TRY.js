@@ -15,11 +15,10 @@ To share your work with a broader community visit [channel.try.js](https://githu
 So far this web app is developed and ***tested with Google Chrome***. Anyway you are welcome to send possible [bug reports](https://github.com/s-a/try.js/issues) and/or [fixes](https://github.com/s-a/try.js).
 
 
-## Learn TRY.js in a few minuts
+## Learn TRY.js in a few minutes
 
-### Load example presets and the way to share your work on GitHub
+### Load example presets
 A click on the ```Package / Open``` menu item will show a list of avilable examples.
-Visit https://github.com/s-a/channel.try.js for more information.
 
 
 ## Developer API guidelines
