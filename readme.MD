@@ -7,7 +7,7 @@ TRY.js is supposed to programm a virtual robot which moves in a 3D environment a
 
 Due to the ease of use and the limited instruction set TRY.js is well suited for the introduction to programming, especially for learning the programming language JavaScript.
  
-TRY.js gives an overview about synchronious and asynchronious codes as well as test driven development.
+TRY.js gives an overview about [synchronious and asynchronious codes](https://github.com/s-a/TRY.js/blob/development/docs/robot.MD) as well as [test driven development](/docs/tests.MD).
 
 All you work can be saved on [Google Drive™](https://drive.google.com) where you can share your work with your friends. You need a [Google™ account](https://accounts.google.com/SignUp "Create your Google Account") to use this feature.   
 To share your work with a broader community visit [channel.try.js](https://github.com/s-a/channel.try.js) and follow the instructions.
@@ -22,16 +22,13 @@ A click on the ```Package / Open``` menu item will show a list of avilable examp
 Visit https://github.com/s-a/channel.try.js for more information.
 
 
-## Create your own codes
+## Developer API guidelines
 
-### Environment - Create and edit your own environments
-A click on the ```Environment``` menu item will open an editor with a property editor to change the current environment meta data. In this view ***you do not need to write code*** manually. Press `Document / New` to create a new Google Drive document. Example: [basic-environment.json](https://github.com/s-a/examples.try.js/blob/master/first%20steps/basic-environment.json).
+### [Environment](/docs/environment.MD) - Create and edit your own environments
 
 ### [Robot API](/docs/robot.MD) - Create and edit your own robot programs
-A click on the ```Program / Edit``` menu item will open an editor. Press `Document / New` to create a new Google Drive document. After writing your code you need to click on the ```AssignCode``` menu item. This will load your current program into the robot. Example: [basic-program.js](https://github.com/s-a/examples.try.js/blob/master/first%20steps/basic-program.js).  
 
 ### [Test API](/docs/tests.MD) - Create and edit tests
-A click on the ```Tests / Edit``` menu item will open an editor. Press `Document / New` to create a new Google Drive document. After writing your code you need to click on the ```AssignCode``` menu item. This will load your current tests into the environment. Example [basic-tests.js](https://github.com/s-a/examples.try.js/blob/master/first%20steps/basic-tests.js).
 
 ## Miscellaneous
 

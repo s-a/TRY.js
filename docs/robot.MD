@@ -1,4 +1,7 @@
-# Robot API description
+# TRY.js (Beta) Robot API description
+A click on the ```Program / Edit``` menu item will open an editor. Press `Document / New` to create a new Google Drive document. After writing your code you need to click on the ```AssignCode``` menu item. This will load your current program into the robot. Example: [basic-program.js](https://github.com/s-a/examples.try.js/blob/master/first%20steps/basic-program.js).  
+
+
 A ```Robot``` [programm](https://github.com/s-a/examples.try.js/blob/master/first%20steps/basic-program.js) runs allways in context of the robot himself. For this reason we allways use the keyord ```this``` to access the robots methods. Maybe the most important method of Robot is the ```.move()``` method. To move the robot forward within an programm you need to call ```this.move("forward")```. Keep in mind that the robot can only execute one command at the time. For this reason you have to use the callback methods to determine if the robot has completed a running command. It is possible with the ```onComplete``` callback method. See ***[Synchronous methods](#synchronous-code)*** to read more about this topic.
 
 ---
