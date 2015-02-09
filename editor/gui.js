@@ -225,18 +225,26 @@
 
 
 			var mazecmd = {
+				height:500,
+				width:500,
+				rows:3,
+				cols:3,
 				"generate" : function() {
 					window.opener.engine.addOn.maze.generate({
-						height:500,
-						width:500,
-						rows:3,
-						cols:3,
+						height:mazecmd.height,
+						width:mazecmd.height,
+						rows:mazecmd.rows,
+						cols:mazecmd.cols,
 					});
 					refreshWallMetaSourceCode();
 				}
 			}
 			var folderAddOns = gui.addFolder('Addons');
 			var folderMaze = folderAddOns.addFolder('Maze');
+			folderMaze.add(mazecmd, "height", 500, 4000).step(1).name("Height");
+			//folderMaze.add(mazecmd, "width", 500, 10000).name("Width");
+			folderMaze.add(mazecmd, "cols", 3, 50).step(1).name("Cols");
+			folderMaze.add(mazecmd, "rows", 3, 50).step(1).name("Rows");
 			folderMaze.add(mazecmd, "generate").name("new");
 
 
