@@ -128,6 +128,17 @@
 			window.opener.originalFlowerPositions = engine.flower.meta();
 			refreshWallMetaSourceCode();
 		},
+		removeFlower : function() {
+			if (engine.selectedFlower){
+				engine.flower.remove(engine.selectedFlower);
+				window.opener.originalFlowerPositions = engine.flower.meta();
+				window.opener.robot.program.stop();
+				refreshWallMetaSourceCode();
+				engine.selectedFlower = null;
+			} else {
+				alert("No flower selected.");
+			}
+		},
 		removeWall : function() {
 			if (engine.selected){
 				engine.wall.remove(engine.selected);
@@ -184,6 +195,7 @@
 			var folderSelectedWall = gui.addFolder('Selected wall');
 			gui.add( cmd, 'addFlower' ).name("New Flower");
 			var folderFlower = gui.addFolder('Selected flower');
+			folderFlower.add( cmd, 'removeFlower' ).name("Remove");
 
 			var folderRobot = gui.addFolder('Robot');
 			var folderHomeBox = gui.addFolder('HomeBox');
