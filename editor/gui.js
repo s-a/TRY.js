@@ -24,8 +24,8 @@
 			x : 0,
 			z : 0
 		},
-		energy: window.opener.robotConfigs.energy
-
+		energy: window.opener.robotConfigs.energy,
+		capacity: window.opener.robotConfigs.capacity
 	}
 
 	var homeBoxConfig = window.homeBoxConfig = {
@@ -64,7 +64,8 @@
 					x : engine.android.position.x,
 					z : engine.android.position.z
 				},
-				energy : window.opener.robotConfigs.energy
+				energy : window.opener.robotConfigs.energy,
+				capacity : window.opener.robotConfigs.capacity
 			},
 			homeBox : {
 				position : {
@@ -197,6 +198,19 @@
 			folderRobot.add( robotConfig.energy, 'max',0).step(1).name("MaxEnergy").listen().onChange( function(){
 			   	window.opener.robotConfigs.energy.max = robotConfig.energy.max;
 			  	window.opener.refreshRobotEnergyStatus();
+	  			//window.opener.robot.program.stop();
+			  	refreshWallMetaSourceCode();
+			});
+
+			folderRobot.add( robotConfig.capacity, 'current',0).step(1).name("CurrentCapacity").listen().onChange( function(){
+			   	window.opener.robotConfigs.capacity.current = robotConfig.capacity.current;
+			  	window.opener.refreshRobotCapacityStatus();
+	  			//window.opener.robot.program.stop();
+			  	refreshWallMetaSourceCode();
+			});
+			folderRobot.add( robotConfig.capacity, 'max',0).step(1).name("MaxCapacity").listen().onChange( function(){
+			   	window.opener.robotConfigs.capacity.max = robotConfig.capacity.max;
+			  	window.opener.refreshRobotCapacityStatus();
 	  			//window.opener.robot.program.stop();
 			  	refreshWallMetaSourceCode();
 			});
