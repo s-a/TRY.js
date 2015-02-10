@@ -125,6 +125,7 @@
 		},
 		addFlower : function() {
 			engine.flower.add();
+			window.opener.originalFlowerPositions = engine.flower.meta();
 			refreshWallMetaSourceCode();
 		},
 		removeWall : function() {
@@ -203,13 +204,14 @@
 			folderFlower.add( flowerConfig.position, 'x' ).step(10).name("PositionX").listen().onChange( function(){
 			  	engine.selectedFlower.position.x = (+flowerConfig.position.x);
 			  	engine.selectedFlower.userData.sel.position.x = (+flowerConfig.position.x-80);
-	  			window.opener.robot.program.stop();
+	  			window.opener.originalFlowerPositions = engine.flower.meta();
 			  	refreshWallMetaSourceCode();
 			});
 			folderFlower.add( flowerConfig.position, 'z' ).step(10).name("PositionZ").listen().onChange( function(){
 			  	engine.selectedFlower.position.z = (+flowerConfig.position.z);
 			  	engine.selectedFlower.userData.sel.position.z = (+flowerConfig.position.z+5);
-		  		window.opener.robot.program.stop();
+	  			window.opener.originalFlowerPositions = engine.flower.meta();
+		  		//window.opener.robot.program.stop();
 			  	refreshWallMetaSourceCode();
 			});
 			folderSelectedWall.add( boxConfig.scale, 'x', 5, 10000 ).step(10).name("ScaleX").listen().onChange(refreshWallGeometry);
@@ -232,6 +234,7 @@
 
 			folderRobot.add( robotConfig.capacity, 'current',0).step(1).name("CurrentCapacity").listen().onChange( function(){
 			   	window.opener.robotConfigs.capacity.current = robotConfig.capacity.current;
+			   	window.opener.orginalBotCapacityCurrent = robotConfig.capacity.current;
 			  	window.opener.refreshRobotCapacityStatus();
 	  			//window.opener.robot.program.stop();
 			  	refreshWallMetaSourceCode();
