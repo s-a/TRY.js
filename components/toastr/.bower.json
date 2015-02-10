@@ -1,0 +1,22 @@
+{
+  "name": "toastr",
+  "version": "2.1.0",
+  "main": [
+    "toastr.js",
+    "toastr.css"
+  ],
+  "dependencies": {
+    "jquery": ">=1.6.3"
+  },
+  "homepage": "https://github.com/johnpapa/toastr-bower",
+  "_release": "2.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "2.1.0",
+    "commit": "624cfc784424e947436c6047d59b0f6df9f3af1d"
+  },
+  "_source": "git://github.com/johnpapa/toastr-bower.git",
+  "_target": "~2.1.0",
+  "_originalSource": "toastr",
+  "_direct": true
+}

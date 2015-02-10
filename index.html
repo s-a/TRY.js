@@ -5,15 +5,14 @@
 	<meta charset="utf-8">
 	<meta author="Stephan Ahlf">
 	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-	<link rel="stylesheet" href="lib/magnific-popup.css"> 
+	<link rel="stylesheet" href="lib/magnific-popup.css">
  	<link rel="stylesheet" media="all" href="lib/mocha.css">
- 	
+
 	<link rel="import" href="components/core-icons/core-icons.html">
 	<link rel="import" href="components/core-icons/social-icons.html">
 	<link rel="import" href="components/core-icons/device-icons.html">
 	<link rel="import" href="components/core-icons/maps-icons.html">
-
-
+	<link href="components/toastr/toastr.css" rel="stylesheet"/>
 
 	<script type="x-shader/x-vertex" id="vertexShader">
 		varying vec3 vWorldPosition;
@@ -35,6 +34,10 @@
 		}
 	</script>
 	<style type="text/css">
+	body,html{
+		height: 100%;
+		width: 100%;
+	}
 		body{
 			overflow: hidden;
 			background-color: #0D0D0D;
@@ -66,15 +69,15 @@
 		}
 
 		#donate, #t{
-			
+
 		}
- 
-		 
+
+
 		#state{
 			position: absolute;
 			top: 45px;
 			left: 45px;
-			z-index: 100; 
+			z-index: 100;
 		}
 		.social_share_privacy_area li {
 			width: 240px;
@@ -87,7 +90,7 @@
 			width: 22px;
 			height: 22px;
 		}
-		.menu{ 
+		.menu{
 			background-color: #F8F8FF;
 			color: #0D0D0D;
 			border-radius: 5px;
@@ -107,12 +110,14 @@
 		.menu a {
 			text-decoration:  none;
 		}
-
+		.toast {
+		    opacity: 1 !important;
+		}
 	</style>
 </head>
-<body> 
+<body>
 	<core-menu-button id="state" icon="menu">
-		<div class="menu"> 
+		<div class="menu">
 			<a href="https://github.com/s-a/try.js#developer-api-guidelines" target="_blank">
 				<core-icon class="menu__button" icon="social:school" title="Guides & Resources"></core-icon>
 			</a>
@@ -123,10 +128,10 @@
 				<core-icon id="program__run__state" class="menu__button" icon="android"></core-icon>
 			</a>
 		  	<core-icon class="menu__button" icon="maps:local-florist"></core-icon>
-		  	<sub id="robot__capacity__status"></sub> 
+		  	<sub id="robot__capacity__status"></sub>
 		  	<core-icon id="robot__energy" class="menu__button" label="Robot energy status"></core-icon>
-		  	<sub id="robot__energy__status"></sub> 
-		  	
+		  	<sub id="robot__energy__status"></sub>
+
 		</div>
 	</core-menu-button>
 	<canvas id="maze"></canvas>
@@ -138,7 +143,7 @@
 			<input type="hidden" name="hosted_button_id" value="39FX7BEP8AN6J">
 			<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG_global.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
 			<img alt="" border="0" src="https://www.paypalobjects.com/de_DE/i/scr/pixel.gif" width="1" height="1">
-			</form>		
+			</form>
 		</div>
 		<div id="t" class="white-popup">
 			<div id="mocha"><p><a href=".">Index</a></p></div>
@@ -162,14 +167,15 @@
 	<script src="js/THREEx.FullScreen.js"></script>
 	<script src="js/THREEx.WindowResize.js"></script>
 	<script src="js/Tween.js"></script>
-	<script type='text/javascript' src='js/DAT.GUI.min.js'></script> 
+	<script type='text/javascript' src='js/DAT.GUI.min.js'></script>
 	<script src="lib/jquery-2.1.3.min.js"></script>
+	<script src="components/toastr/toastr.js"></script>
 	<script src="lib/underscore-min.js"></script>
 	<script src="lib/maze/array.js"></script>
 	<script src="lib/maze/cell.js"></script>
 	<script src="lib/maze/graph.js"></script>
 	<script src="lib/maze/mazeGenerator.js"></script>
-	<script src="lib/maze/maze.js"></script> 
+	<script src="lib/maze/maze.js"></script>
 	<script src="lib/jquery.magnific-popup.min.js"></script>
 	<script src="lib/should.min.js"></script>
 	<script type="text/javascript" src="lib/share/javascripts/socialshareprivacy.js"></script>
@@ -187,11 +193,10 @@
 	<script type="text/javascript" src="lib/share/javascripts/modules/twitter.js"></script>
 	<script type="text/javascript" src="lib/share/javascripts/modules/xing.js"></script>
 	<script type="text/javascript" src="lib/share/javascripts/modules/delicious.js"></script>
-	<script type="text/javascript" src="lib/share/javascripts/modules/hackernews.js"></script>	
+	<script type="text/javascript" src="lib/share/javascripts/modules/hackernews.js"></script>
 	<script src="lib/try/engine.js"></script>
 	<script src="lib/try/robot.js"></script>
 	<script src="lib/try/channel.js"></script>
 	<script src="lib/try/gui.js"></script>
-
 </body>
 </html>
