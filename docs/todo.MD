@@ -1,5 +1,7 @@
 ### Todo's
 
+
+ - show error message on robot crash, because this aborts the program!
  - add warning on page unload to avoid data lost.
  - add assign environment json for copy and paste.
  - Declare multiple energy stations (like homebox)
