@@ -18,6 +18,12 @@
 			z:5,
 		}
 	};
+	var flowerConfig = window.flowerConfig = {
+		position : {
+			z : 0,
+			x : 0,
+		}
+	}
 
 	var robotConfig = window.robotConfig = {
 		position : {
