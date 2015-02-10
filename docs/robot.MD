@@ -6,6 +6,7 @@ A ```Robot``` [programm](https://github.com/s-a/examples.try.js/blob/master/firs
 
 ---
 ### Robot.move()
+Move the robot forward or backward.
  - ***Parameters***
    - ```Direction``` (String)
      - Possbile values:
@@ -23,6 +24,7 @@ this.move("forward", function(){
 
 ---
 ### Robot.turn()
+Turns the robot into the desired direction.
  - ***Parameters***
    - ```Direction``` (String)
      - Possbile values:
@@ -42,11 +44,11 @@ this.turn("left", function(){
 
 ---
 ### Robot.step()
+Commands the robot to make a step right or left.
  - ***Parameters***
    - ```Direction``` (String)
      - Possbile values:
-       - ```"left"``` Rotates the robot a step left.
-       - ```"right"``` Rotates the robot a step right.
+       - ["left", "right"]
    - ```onComplete``` (Function) Optional callback method.
   
 ##### Example
@@ -59,6 +61,7 @@ this.step("left", function(){
 
 ---
 ### Robot.run()
+Move the robot forward ```n``` times.
  - ***Parameters***
    - ```count``` (Integer) A number of steps forward
    - ```onComplete``` (Function) Optional callback method.
@@ -68,6 +71,32 @@ this.step("left", function(){
 this.run(10, function(){
     alert("Robot moved 10 times foward!");
 });  
+```
+---
+### Robot.get()
+Pick up an object in front of the robot.
+ - ***returns***
+   - ```Boolean```
+  
+##### Example
+```javascript
+if (this.get()){
+    alert("Robot picked up something awesome!");
+}
+
+```
+---
+### Robot.put()
+Unload an object in front of the robot.
+ - ***returns***
+   - ```Boolean```
+  
+##### Example
+```javascript
+if (this.put()){
+    alert("Robot unloaded it!");
+}
+
 ```
 ---
 
@@ -102,13 +131,24 @@ if (this.sensor.atHome()){
 ```
 ---
 ### Robot.sensor.canGet()
-Determines if the robot can pick up.
+Determines if the robot is able pick something up.
  - ***Returns*** Boolean
 
 ##### Example
 ```javascript
 if (this.sensor.canGet()){
     alert("The robot can get something!");
+});  
+```
+---
+### Robot.sensor.canPut()
+Determines if the robot is able to unload something.
+ - ***Returns*** Boolean
+
+##### Example
+```javascript
+if (this.sensor.canPut()){
+    alert("The robot can put something here!");
 });  
 ```
 ---

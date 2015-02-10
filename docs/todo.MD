@@ -1,9 +1,6 @@
 ### Todo's
 
-
  - Keep current drive documents by url get parm ids! (reset them on package load!)
- - Declare balls of black matter in environment parms with source x,y,z and target x,y,z
- - Declare robot get and put method. 
  - Declare robot max loading capacity.
  - Count robot stats (crashes, actions, fuel)
  - Declare multiple energy stations (like homebox)
