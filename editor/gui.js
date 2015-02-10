@@ -1,11 +1,11 @@
-
 (function(dat, engine, js_beautify, robot, gapi, rtclient, google) {
 	var url = window.location.pathname;
 	var filename = url.substring(url.lastIndexOf('/')+1);
 
-	
+	 //unRegisterAllEventListeners(window);
 	var scaleFactor = 50;
 	var gui = new dat.GUI();
+	dat.GUI.toggleHide = function() {};
 	var codeMode = filename.split(".")[0];
 	var BoxConfig = function() {
 		this.position = {
