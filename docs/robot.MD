@@ -5,19 +5,19 @@ A click on the ```Program / Edit``` menu item will open an editor. Press `Docume
 A ```Robot``` [programm](https://github.com/s-a/examples.try.js/blob/master/first%20steps/basic-program.js) runs allways in context of the robot himself. For this reason we allways use the keyword ```this``` to access the robots methods. Maybe the most important method of Robot is the ```.move()``` method. To move the robot forward within an program you need to call ```this.move("forward")```. Keep in mind that the robot can only execute one command at the time. For this reason you have to use the callback methods to determine if the robot has completed a running command. It is possible with the ```onComplete``` callback method. See ***[Synchronous methods](#synchronous-code)*** to read more about this topic.
 
 ## Overview
-[robot.MD#robotmove](Robot.move())  
-[robot.MD#robotturn](Robot.turn())  
-[robot.MD#robotstep](Robot.step())  
-[robot.MD#robotrun](Robot.run())  
-[robot.MD#robotget](Robot.get())  
-[robot.MD#robotput](Robot.put())  
-[robot.MD#robotcharge](Robot.charge())  
-[robot.MD#robotsensorathome](Robot.sensor.atHome())  
-[robot.MD#robotsensorcanget](Robot.sensor.canGet())  
-[robot.MD#robotsensorcanput](Robot.sensor.canPut())  
-[robot.MD#robotsensorcanmove](Robot.sensor.canMove())  
-[robot.MD#robotsensorcanturn](Robot.sensor.canTurn())  
-[robot.MD#robotdo](Robot.do())  
+[Robot.move()](robot.MD#robotmove)  
+[Robot.turn()](robot.MD#robotturn)  
+[Robot.step()](robot.MD#robotstep)  
+[Robot.run()](robot.MD#robotrun)  
+[Robot.get()](robot.MD#robotget)  
+[Robot.put()](robot.MD#robotput)  
+[Robot.charge()](robot.MD#robotcharge)  
+[Robot.sensor.atHome()](robot.MD#robotsensorathome)  
+[Robot.sensor.canGet()](robot.MD#robotsensorcanget)  
+[Robot.sensor.canPut()](robot.MD#robotsensorcanput)  
+[Robot.sensor.canMove()](robot.MD#robotsensorcanmove)  
+[Robot.sensor.canTurn()](robot.MD#robotsensorcanturn)  
+[Robot.do()](robot.MD#robotdo)  
 
 ## Description
 
