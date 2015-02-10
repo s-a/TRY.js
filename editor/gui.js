@@ -102,6 +102,21 @@
 	}
 
 	var cmd = {
+		help : function() {
+			var url = "";
+			switch(codeMode){
+				case "environment":
+					url = "https://github.com/s-a/TRY.js/blob/master/docs/environment.MD";
+					break;
+				case "tests":
+					url = "https://github.com/s-a/TRY.js/blob/master/docs/tests.MD";
+					break;
+				case "program":
+					url = "https://github.com/s-a/TRY.js/blob/master/docs/robot.MD";
+					break;
+			}
+			window.open(url);
+		},
 		create : function() {
 			window._client.createNewFileAndRedirect()
 		},
@@ -159,6 +174,7 @@
 		}
 	}
 
+	gui.add( cmd, 'help' ).name("Help");
 	var folderDocument = gui.addFolder('Document');
 
 	folderDocument.add( cmd, 'open' ).name("Open Document");
