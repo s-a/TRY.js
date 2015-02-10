@@ -101,7 +101,17 @@ if (this.sensor.atHome()){
 });  
 ```
 ---
+### Robot.sensor.canGet()
+Determines if the robot can pick up.
+ - ***Returns*** Boolean
 
+##### Example
+```javascript
+if (this.sensor.canGet()){
+    alert("The robot can get something!");
+});  
+```
+---
 ### Robot.sensor.canMove()
 Determines if the robot is able to move.
  - ***Returns*** Boolean  
