@@ -1,5 +1,7 @@
 ### Todo's
 
+ - add warning on page unload to avoid data lost.
+ - add assign environment json for copy and paste.
  - Declare multiple energy stations (like homebox)
  - Keep current drive documents by url get parm ids! (reset them on package load!)
  - Add jetpack to robot to make the robot able to move up and down (costs 10 energy units)
