@@ -54,3 +54,4 @@ A click on the ```About / Donate``` menu item will open a donation dialog.
 
 ### Credits
  - [Random maze generator](https://github.com/felipecsl/random-maze-generator) created by [felipecsl](https://github.com/felipecsl) 
+ - Flower model taken from [BLENDER Timelapse: Flower in the forest (low poly)](http://www.blendswap.com/blends/view/71968) created by [jusezz](http://www.blendswap.com/blends/view/71968)
