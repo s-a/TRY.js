@@ -64,6 +64,7 @@
 		robotConfig.energy = window.opener.robotConfigs.energy;
 		//window.opener.robot.program.stop();
 		var wallMetaData = engine.wall.meta();
+		var flowerMetaData = engine.flower.meta();
 		var source = {
 			robot : {
 				position : {
@@ -80,6 +81,7 @@
 				}
 			},
 			walls : wallMetaData,
+			flowers : flowerMetaData
 		}
 		return source;
 	}
@@ -119,6 +121,10 @@
 		},
 		addWall : function() {
 			engine.wall.add();
+			refreshWallMetaSourceCode();
+		},
+		addFlower : function() {
+			engine.flower.add();
 			refreshWallMetaSourceCode();
 		},
 		removeWall : function() {
@@ -175,6 +181,9 @@
         case "environment":
 			gui.add( cmd, 'addWall' ).name("New Wall");
 			var folderSelectedWall = gui.addFolder('Selected wall');
+			gui.add( cmd, 'addFlower' ).name("New Flower");
+			var folderFlower = gui.addFolder('Selected flower');
+
 			var folderRobot = gui.addFolder('Robot');
 			var folderHomeBox = gui.addFolder('HomeBox');
 			folderSelectedWall.add( cmd, 'removeWall' ).name("Remove");
@@ -187,6 +196,19 @@
 			});
 			folderSelectedWall.add( boxConfig.position, 'z' ).step(10).name("PositionZ").listen().onChange( function(){
 			  	engine.selected.position.z = (+boxConfig.position.z);
+		  		window.opener.robot.program.stop();
+			  	refreshWallMetaSourceCode();
+			});
+
+			folderFlower.add( flowerConfig.position, 'x' ).step(10).name("PositionX").listen().onChange( function(){
+			  	engine.selectedFlower.position.x = (+flowerConfig.position.x);
+			  	engine.selectedFlower.userData.sel.position.x = (+flowerConfig.position.x-80);
+	  			window.opener.robot.program.stop();
+			  	refreshWallMetaSourceCode();
+			});
+			folderFlower.add( flowerConfig.position, 'z' ).step(10).name("PositionZ").listen().onChange( function(){
+			  	engine.selectedFlower.position.z = (+flowerConfig.position.z);
+			  	engine.selectedFlower.userData.sel.position.z = (+flowerConfig.position.z+5);
 		  		window.opener.robot.program.stop();
 			  	refreshWallMetaSourceCode();
 			});
@@ -288,7 +310,7 @@
 		}
 		gui.open();
 		if (folderSelectedWall) {
-			folderSelectedWall.open()
+		//	folderSelectedWall.open()
 		}
 	};
 
