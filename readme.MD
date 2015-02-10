@@ -17,6 +17,12 @@ So far this web app is developed and ***tested with Google Chrome***. Anyway you
 
 ## Learn TRY.js in a few minutes
 
+### Mouse orbit control
+ - Left Click + Mouse move: Rotate view
+ - Wheel up/down: Zoom in / Zoom out
+ - Right Click + Mouse move: Pan view
+
+
 ### Load example presets
 A click on the ```Package / Open``` menu item will show a list of avilable examples.
 
