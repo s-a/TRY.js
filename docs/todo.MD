@@ -1,7 +1,6 @@
 ### Todo's
 
 
- - do not select flower when the robot unloads it.
  - add assign environment json for copy and paste.
  - Declare multiple energy stations (like homebox)
  - Keep current drive documents by url get parm ids! (reset them on package load!)
