@@ -3,7 +3,6 @@
 
  - do not stop program when assign code from test suite editor!
  - do not select flower when the robot unloads it.
- - add warning on page unload to avoid data lost.
  - add assign environment json for copy and paste.
  - Declare multiple energy stations (like homebox)
  - Keep current drive documents by url get parm ids! (reset them on package load!)
