@@ -166,7 +166,7 @@
 		},
 		assign_program_source_code : function() {
 			var source = window.editor.getValue();
-			window.opener.engine.program.load(source);
+			window.opener.robot.program.load(source);
 		},
 		assign_environment_source_code : function() {
 			var source = window.editor.getValue();
