@@ -44,6 +44,7 @@
 	};
 	var boxConfig = window.boxConfig = new BoxConfig();
 	var stationConfig = window.stationConfig = {
+		type : 'energy',
 		position:{
 			x:0,
 			y:0,
@@ -277,7 +278,8 @@
 			folderSelectedWall.add( boxConfig.scale, 'z', 5, 10000 ).step(10).name("ScaleZ").listen().onChange(refreshWallGeometry);
 
 			folderSelectedStation.add( cmd, 'removeStation' ).name("Remove");
-
+// callbacks
+    		folderSelectedStation.add( stationConfig, 'type', ['energy', 'fuel', 'teleport']).onChange(function() {} );
 			folderSelectedStation.add( stationConfig.position, 'x' ).step(10).name("PositionX").listen().onChange( function(){
 			  	engine.selectedStation.position.x = (+stationConfig.position.x);
 	  			window.opener.robot.program.stop();
