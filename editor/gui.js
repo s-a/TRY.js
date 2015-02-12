@@ -43,6 +43,13 @@
 		docName : ""
 	};
 	var boxConfig = window.boxConfig = new BoxConfig();
+	var stationConfig = window.stationConfig = {
+		position:{
+			x:0,
+			y:0,
+			z:0,
+		}
+	};
 	var updateSourceCode = function(json) {
 	  	window.editor.setValue(getEnvironmentMetaSourceCode(json));
 	}
@@ -64,6 +71,7 @@
 		robotConfig.energy = window.opener.robotConfigs.energy;
 		//window.opener.robot.program.stop();
 		var wallMetaData = engine.wall.meta();
+		var stationMetaData = engine.station.meta();
 		var flowerMetaData = engine.flower.meta();
 		var source = {
 			robot : {
@@ -81,6 +89,7 @@
 				}
 			},
 			walls : wallMetaData,
+			stations : stationMetaData,
 			flowers : flowerMetaData
 		}
 		return source;
@@ -142,6 +151,21 @@
 			engine.flower.add();
 			window.opener.originalFlowerPositions = engine.flower.meta();
 			refreshWallMetaSourceCode();
+		},
+		addStation : function() {
+			engine.station.add();
+			window.opener.originalStaionPositions = engine.station.meta();
+			refreshWallMetaSourceCode();
+		},
+		removeStation : function() {
+			if (engine.selectedStation){
+				engine.station.remove(engine.selectedStation);
+				window.opener.robot.program.stop();
+				refreshWallMetaSourceCode();
+				engine.selectedStation = null;
+			} else {
+				alert("No station selected.");
+			}
 		},
 		removeFlower : function() {
 			if (engine.selectedFlower){
@@ -216,6 +240,8 @@
 			gui.add( cmd, 'addFlower' ).name("New Flower");
 			var folderFlower = gui.addFolder('Selected flower');
 			folderFlower.add( cmd, 'removeFlower' ).name("Remove");
+			gui.add( cmd, 'addStation' ).name("New Station");
+			var folderSelectedStation = gui.addFolder('Selected station');
 
 			var folderRobot = gui.addFolder('Robot');
 			var folderHomeBox = gui.addFolder('HomeBox');
@@ -249,6 +275,25 @@
 			folderSelectedWall.add( boxConfig.scale, 'x', 5, 10000 ).step(10).name("ScaleX").listen().onChange(refreshWallGeometry);
 			folderSelectedWall.add( boxConfig.scale, 'y', 50, 1000 ).step(10).name("ScaleY").listen().onChange(refreshWallGeometry);
 			folderSelectedWall.add( boxConfig.scale, 'z', 5, 10000 ).step(10).name("ScaleZ").listen().onChange(refreshWallGeometry);
+
+			folderSelectedStation.add( cmd, 'removeStation' ).name("Remove");
+
+			folderSelectedStation.add( stationConfig.position, 'x' ).step(10).name("PositionX").listen().onChange( function(){
+			  	engine.selectedStation.position.x = (+stationConfig.position.x);
+	  			window.opener.robot.program.stop();
+			  	refreshWallMetaSourceCode();
+			});
+			folderSelectedStation.add( stationConfig.position, 'y' , 20).step(10).name("PositionY").listen().onChange( function(){
+			  	engine.selectedStation.position.y = (+stationConfig.position.y);
+		  		window.opener.robot.program.stop();
+			  	refreshWallMetaSourceCode();
+			});
+			folderSelectedStation.add( stationConfig.position, 'z' ).step(10).name("PositionZ").listen().onChange( function(){
+			  	engine.selectedStation.position.z = (+stationConfig.position.z);
+		  		window.opener.robot.program.stop();
+			  	refreshWallMetaSourceCode();
+			});
+
 
 
 			folderRobot.add( robotConfig.energy, 'current',0).step(1).name("CurrentEnergy").listen().onChange( function(){
