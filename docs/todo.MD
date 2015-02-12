@@ -1,6 +1,5 @@
 ### Todo's
 
- - Add a copy link menu item (url + env prog and test as getparm) to quickshare a package.
  - Declare multiple energy stations (like homebox)
  - Declare multiple fuel stations (like homebox)
  - Keep current drive documents by url get parm ids! (reset them on package load!)
