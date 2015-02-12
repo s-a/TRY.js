@@ -247,7 +247,7 @@
 			  	refreshWallMetaSourceCode();
 			});
 			folderSelectedWall.add( boxConfig.scale, 'x', 5, 10000 ).step(10).name("ScaleX").listen().onChange(refreshWallGeometry);
-			folderSelectedWall.add( boxConfig.scale, 'y', 50, 100 ).step(10).name("ScaleY").listen().onChange(refreshWallGeometry);
+			folderSelectedWall.add( boxConfig.scale, 'y', 50, 1000 ).step(10).name("ScaleY").listen().onChange(refreshWallGeometry);
 			folderSelectedWall.add( boxConfig.scale, 'z', 5, 10000 ).step(10).name("ScaleZ").listen().onChange(refreshWallGeometry);
 
 
