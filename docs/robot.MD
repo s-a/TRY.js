@@ -12,8 +12,10 @@ A ```Robot``` [programm](https://github.com/s-a/examples.try.js/blob/master/firs
 [Robot.get()](robot.MD#robotget)  
 [Robot.put()](robot.MD#robotput)  
 [Robot.charge()](robot.MD#robotcharge)  
+[Robot.teleport()](robot.MD#robotteleport)  
 [Robot.sensor.atHome()](robot.MD#robotsensorathome)  
 [Robot.sensor.canCharge()](robot.MD#robotsensorcancharge)  
+[Robot.sensor.canTeleport()](robot.MD#robotsensorcanteleport)  
 [Robot.sensor.position()](robot.MD#robotsensorposition)  
 [Robot.sensor.canGet()](robot.MD#robotsensorcanget)  
 [Robot.sensor.canPut()](robot.MD#robotsensorcanput)  
@@ -132,6 +134,20 @@ if (this.charge()){
 });  
 ```
 ---
+### Robot.teleport()
+Teleports the robot to given coodinates.
+ - ***Returns*** Boolean
+ - ***Parameters***
+   - ```position``` (Object) for example {x:0, y:0, z:0}
+   - ```onComplete``` (Function) Optional callback method.
+
+##### Example
+```javascript
+this.teleport({x:0, y:0, z:0}, function(){
+    alert("Robot moved with magic!");
+});  
+```
+---
 
 
 ## Robot.sensor  
@@ -145,6 +161,11 @@ Determines if the robot is within his homebox.
 ---
 ### Robot.sensor.canCharge()
 Determines if the robot is within an energy station.
+ - ***Returns*** Boolean
+
+---
+### Robot.sensor.canTeleport()
+Determines if the robot is within a teleport station.
  - ***Returns*** Boolean
 
 ---
