@@ -13,6 +13,7 @@ A ```Robot``` [programm](https://github.com/s-a/examples.try.js/blob/master/firs
 [Robot.put()](robot.MD#robotput)  
 [Robot.charge()](robot.MD#robotcharge)  
 [Robot.sensor.atHome()](robot.MD#robotsensorathome)  
+[Robot.sensor.canCharge()](robot.MD#robotsensorcancharge)  
 [Robot.sensor.position()](robot.MD#robotsensorposition)  
 [Robot.sensor.canGet()](robot.MD#robotsensorcanget)  
 [Robot.sensor.canPut()](robot.MD#robotsensorcanput)  
@@ -139,6 +140,11 @@ The robot has several sensors that allow him to perceive its environment.
 ---
 ### Robot.sensor.atHome()
 Determines if the robot is within his homebox.
+ - ***Returns*** Boolean
+
+---
+### Robot.sensor.canCharge()
+Determines if the robot is within an energy station.
  - ***Returns*** Boolean
 
 ---

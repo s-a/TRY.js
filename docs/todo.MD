@@ -1,8 +1,9 @@
 ### Todo's
 
- - Declare multiple energy stations (like homebox)
+ - add a debugmode checkbox to main gui
+ - add position y to home bo cube
+ - Declare multiple teleport stations (like homebox)
  - Declare multiple fuel stations (like homebox)
- - Declare multiple teleport station (like homebox)
  - Keep current drive documents by url get parm ids! (reset them on package load!)
  - Add jetpack to robot to make the robot able to move up and down (costs 10 energy units)
  - make walls movable via Robot.push() ... 
