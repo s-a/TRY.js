@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 	<link rel="stylesheet" href="lib/magnific-popup.css">
  	<link rel="stylesheet" media="all" href="lib/mocha.css">
-
+	<link href='//fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
 	<link rel="import" href="components/core-icons/core-icons.html">
 	<link rel="import" href="components/core-icons/social-icons.html">
 	<link rel="import" href="components/core-icons/device-icons.html">
@@ -39,16 +39,37 @@
 		width: 100%;
 	}
 		body{
+			font-family: 'Orbitron', sans-serif;
 			overflow: hidden;
 			background-color: #0C141F;
+			color: #6FC3DF;
+		}
+		ul{
+		  margin:0;
+		  padding: 0;
+		}
+		li{
+			list-style: none;
+			padding: 11px;
+			padding-left:0;
+			margin: 0;
+		}
+		a{
+			color:#DF740C;
+			text-decoration: none;
+		}
+		a:hover{
+			color:#DF740C;
+			text-decoration: underline;
 		}
 
+		}
 		pre.error{
 			display: none !important;
 		}
 		.white-popup {
 		  position: relative;
-		  background: #FFF;
+		  background: #0C141F;
 		  padding: 20px;
 		  width: auto;
 		  max-width: 500px;

@@ -279,7 +279,9 @@
 
 			folderSelectedStation.add( cmd, 'removeStation' ).name("Remove");
 // callbacks
-    		folderSelectedStation.add( stationConfig, 'type', ['energy', 'fuel', 'teleport']).onChange(function() {} );
+    		folderSelectedStation.add( stationConfig, 'type', ['energy', 'fuel', 'teleport']).onChange(function() {
+
+    		});
 			folderSelectedStation.add( stationConfig.position, 'x' ).step(10).name("PositionX").listen().onChange( function(){
 			  	engine.selectedStation.position.x = (+stationConfig.position.x);
 	  			window.opener.robot.program.stop();
