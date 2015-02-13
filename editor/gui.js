@@ -282,6 +282,12 @@
 	  			window.opener.originalFlowerPositions = engine.flower.meta();
 			  	refreshWallMetaSourceCode();
 			});
+			folderFlower.add( flowerConfig.position, 'y',0 ).step(10).name("PositionY").listen().onChange( function(){
+			  	engine.selectedFlower.position.y = (+flowerConfig.position.y);
+			  	engine.selectedFlower.userData.sel.position.y = (+flowerConfig.position.y+15);
+	  			window.opener.originalFlowerPositions = engine.flower.meta();
+			  	refreshWallMetaSourceCode();
+			});
 			folderFlower.add( flowerConfig.position, 'z' ).step(10).name("PositionZ").listen().onChange( function(){
 			  	engine.selectedFlower.position.z = (+flowerConfig.position.z);
 			  	engine.selectedFlower.userData.sel.position.z = (+flowerConfig.position.z+5);
