@@ -395,6 +395,7 @@
 
 
 
+          	gui.add(window.opener.engine, 'debugMode').name("Debug Mode");
           	gui.add(cmd, 'assign_environment_source_code').name("AssignCode");
           	break;
         case "program":
