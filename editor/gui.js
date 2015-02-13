@@ -22,7 +22,13 @@
 		position : {
 			z : 0,
 			x : 0,
+			y : 0,
 		}
+	}
+	if (engine.selectedFlower){
+		flowerConfig.position.x = engine.selectedFlower.position.x;
+		flowerConfig.position.y = engine.selectedFlower.position.y;
+		flowerConfig.position.z = engine.selectedFlower.position.z;
 	}
 
 	var robotConfig = window.robotConfig = {
@@ -35,8 +41,9 @@
 	}
 
 	var homeBoxConfig = window.homeBoxConfig = {
-		x : 0,
-		z : 0
+		x : engine.homeBox.position.x,
+		y : engine.homeBox.position.y,
+		z : engine.homeBox.position.z
 	}
 
 	var config = window.config = {
@@ -51,6 +58,14 @@
 			z:0,
 		}
 	};
+	 
+	if (engine.selectedStation){
+		stationConfig.type = engine.selectedStation.userData.type;
+		stationConfig.position.x = engine.selectedStation.position.x;
+		stationConfig.position.y = engine.selectedStation.position.y;
+		stationConfig.position.z = engine.selectedStation.position.z;
+	}
+
 	var updateSourceCode = function(json) {
 	  	window.editor.setValue(getEnvironmentMetaSourceCode(json));
 	}
@@ -279,8 +294,13 @@
 
 			folderSelectedStation.add( cmd, 'removeStation' ).name("Remove");
 // callbacks
-    		folderSelectedStation.add( stationConfig, 'type', ['energy', 'fuel', 'teleport']).onChange(function() {
-
+    		folderSelectedStation.add( stationConfig, 'type', ['energy', 'fuel', 'teleport']).listen().onChange(function() {
+    			if (engine.selectedStation){
+    				engine.station.setType(engine.selectedStation, stationConfig.type);
+			  		refreshWallMetaSourceCode();
+    			} else {
+    				alert("No station selected.");
+    			}
     		});
 			folderSelectedStation.add( stationConfig.position, 'x' ).step(10).name("PositionX").listen().onChange( function(){
 			  	engine.selectedStation.position.x = (+stationConfig.position.x);
