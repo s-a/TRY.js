@@ -101,6 +101,7 @@
 			homeBox : {
 				position : {
 					x : engine.homeBox.position.x,
+					y : engine.homeBox.position.y,
 					z : engine.homeBox.position.z
 				}
 			},
@@ -360,6 +361,11 @@
 
 			folderHomeBox.add( homeBoxConfig, 'x').name("PositionX").listen().onChange( function(){
 			   	engine.homeBox.position.x = homeBoxConfig.x;
+	   			window.opener.robot.program.stop();
+			  	refreshWallMetaSourceCode();
+			});
+			folderHomeBox.add( homeBoxConfig, 'y', 20).name("PositionY").listen().onChange( function(){
+			   	engine.homeBox.position.y = homeBoxConfig.y;
 	   			window.opener.robot.program.stop();
 			  	refreshWallMetaSourceCode();
 			});

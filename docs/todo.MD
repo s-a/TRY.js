@@ -1,7 +1,6 @@
 ### Todo's
 
- - add a debugmode checkbox to main gui
- - add position y to home bo cube
+ - add position y to home box cube
  - Declare multiple teleport stations (like homebox)
  - Declare multiple fuel stations (like homebox)
  - Keep current drive documents by url get parm ids! (reset them on package load!)
