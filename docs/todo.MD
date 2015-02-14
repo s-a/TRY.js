@@ -1,5 +1,6 @@
 ### Todo's
 
+ - teleport callback comes to early !!!
  - Keep current drive documents by url get parm ids! (reset them on package load!)
  - make walls movable via Robot.push() ... 
  - special stations have different effects: 
