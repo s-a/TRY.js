@@ -1,7 +1,6 @@
 ### Todo's
 
  - Keep current drive documents by url get parm ids! (reset them on package load!)
- - Add jetpack to robot to make the robot able to move up and down (costs 10 energy units)
  - make walls movable via Robot.push() ... 
  - special stations have different effects: 
   - robot becomes smaller (for x moves)
