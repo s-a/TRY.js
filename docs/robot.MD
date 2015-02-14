@@ -12,6 +12,7 @@ A ```Robot``` [programm](https://github.com/s-a/examples.try.js/blob/master/firs
 [Robot.get()](robot.MD#robotget)  
 [Robot.put()](robot.MD#robotput)  
 [Robot.charge()](robot.MD#robotcharge)  
+[Robot.refuel()](robot.MD#robotrefuel)  
 [Robot.teleport()](robot.MD#robotteleport)  
 [Robot.sensor.atHome()](robot.MD#robotsensorathome)  
 [Robot.sensor.canCharge()](robot.MD#robotsensorcancharge)  
@@ -21,6 +22,7 @@ A ```Robot``` [programm](https://github.com/s-a/examples.try.js/blob/master/firs
 [Robot.sensor.canPut()](robot.MD#robotsensorcanput)  
 [Robot.sensor.canMove()](robot.MD#robotsensorcanmove)  
 [Robot.sensor.canTurn()](robot.MD#robotsensorcanturn)  
+[Robot.sensor.canRefuel()](robot.MD#robotsensorcanrefuel)  
 [Robot.do()](robot.MD#robotdo)  
 
 ## Description
@@ -33,6 +35,7 @@ Move the robot forward or backward.
      - Possbile values:
        - ```"forward"``` Moves the robot forward.
        - ```"backward"``` Moves the robot backward.
+       - ```"up"``` Moves the robot up.
    - ```onComplete``` (Function) Optional callback method.
   
 ##### Example
@@ -124,8 +127,6 @@ if (this.put()){
 ### Robot.charge()
 Charges the robot battery.
  - ***Returns*** Boolean
- - ***Parameters***
-   - ```onComplete``` (Function) Optional callback method.
 
 ##### Example
 ```javascript
@@ -134,6 +135,19 @@ if (this.charge()){
 });  
 ```
 ---
+
+### Robot.refuel()
+Refuels the robot' s jet pack.
+ - ***Returns*** Boolean
+
+##### Example
+```javascript
+if (this.refuel()){
+    alert("The robot is in a energy box!");
+});  
+```
+---
+
 ### Robot.teleport()
 Teleports the robot to given coodinates.
  - ***Returns*** Boolean
@@ -235,6 +249,20 @@ if (this.canTurn("left")){
   });
 } else {
   alert("Cannot rotate :O(");
+}
+```
+---
+
+### Robot.sensor.canRefuel()
+Determines if the robot is within a fuel station.
+ - ***Returns*** Boolean
+ 
+##### Example
+```javascript
+if (this.canRefuel()){
+  this.refuel();
+} else {
+  alert("Cannot refuel :O(");
 }
 ```
 
