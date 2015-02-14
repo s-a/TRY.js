@@ -1,5 +1,6 @@
 ### Todo's
 
+ - fix energy charge method !!!
  - teleport callback comes to early !!!
  - Keep current drive documents by url get parm ids! (reset them on package load!)
  - make walls movable via Robot.push() ... 
