@@ -37,6 +37,7 @@
 			z : 0
 		},
 		energy: window.opener.robotConfigs.energy,
+		fuel: window.opener.robotConfigs.fuel || {current:0, max:0},
 		capacity: window.opener.robotConfigs.capacity
 	}
 
@@ -85,6 +86,7 @@
 
 	var getEnvironmentMeta = window.getEnvironmentMeta = function() {
 		robotConfig.energy = window.opener.robotConfigs.energy;
+		robotConfig.fuel = window.opener.robotConfigs.fuel;
 		//window.opener.robot.program.stop();
 		var wallMetaData = engine.wall.meta();
 		var stationMetaData = engine.station.meta();
@@ -96,6 +98,7 @@
 					z : engine.android.position.z
 				},
 				energy : window.opener.robotConfigs.energy,
+				fuel : window.opener.robotConfigs.fuel,
 				capacity : window.opener.robotConfigs.capacity
 			},
 			homeBox : {
@@ -336,6 +339,19 @@
 			folderRobot.add( robotConfig.energy, 'max',0).step(1).name("MaxEnergy").listen().onChange( function(){
 			   	window.opener.robotConfigs.energy.max = robotConfig.energy.max;
 			  	window.opener.refreshRobotEnergyStatus();
+	  			//window.opener.robot.program.stop();
+			  	refreshWallMetaSourceCode();
+			});
+			folderRobot.add( robotConfig.fuel, 'current',0).step(1).name("FuelCurrent").listen().onChange( function(){
+			   	window.opener.robotConfigs.fuel.current = robotConfig.fuel.current;
+			  	window.opener.refreshRobotFuelStatus();
+	  			//window.opener.robot.program.stop();
+			  	refreshWallMetaSourceCode();
+			});
+			folderRobot.add( robotConfig.fuel, 'max',0).step(1).name("FuelMax").listen().onChange( function(){
+			   	window.opener.robotConfigs.fuel.max = robotConfig.fuel.max;
+	   			window.opener.engine.fuelGauge.maxValue = robotConfig.fuel.max;
+			  	window.opener.refreshRobotFuelStatus();
 	  			//window.opener.robot.program.stop();
 			  	refreshWallMetaSourceCode();
 			});
