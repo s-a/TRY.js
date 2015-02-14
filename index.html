@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<title>TRY.js v0.1.72b</title>
+	<title>TRY.js</title>
 	<meta charset="utf-8">
 	<meta author="Stephan Ahlf">
 	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
@@ -138,6 +138,12 @@
 		.toast {
 		    opacity: 1 !important;
 		}
+		#fuel-gauge{
+			height: 24px;
+			width: 48px;
+			margin: -5px;
+			padding: 0;
+		}
 	</style>
 </head>
 <body>
@@ -156,6 +162,7 @@
 		  	<sub id="robot__capacity__status"></sub>
 		  	<core-icon id="robot__energy" class="menu__button" label="Robot energy status"></core-icon>
 		  	<sub id="robot__energy__status"></sub>
+		  	<canvas id="fuel-gauge" title="Fuel"></canvas>
 		  	<span id="tooltip"></span>
 		</div>
 	</core-menu-button>
@@ -205,6 +212,7 @@
 	<script src="lib/maze/maze.js"></script>
 	<script src="lib/jquery.magnific-popup.min.js"></script>
 	<script src="lib/should.min.js"></script>
+	<script type="text/javascript" src="lib/gauge.js"></script>
 	<script type="text/javascript" src="lib/share/javascripts/socialshareprivacy.js"></script>
 	<script type="text/javascript" src="lib/share/javascripts/modules/buffer.js"></script>
 	<script type="text/javascript" src="lib/share/javascripts/modules/disqus.js"></script>
