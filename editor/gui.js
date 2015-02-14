@@ -36,7 +36,7 @@
 			x : 0,
 			z : 0
 		},
-		energy: window.opener.robotConfigs.energy,
+		energy: window.opener.robotConfigs.energy ,
 		fuel: window.opener.robotConfigs.fuel || {current:0, max:0},
 		capacity: window.opener.robotConfigs.capacity
 	}
@@ -332,6 +332,7 @@
 
 			folderRobot.add( robotConfig.energy, 'current',0).step(1).name("CurrentEnergy").listen().onChange( function(){
 			   	window.opener.robotConfigs.energy.current = robotConfig.energy.current;
+				window.opener.orginalBotEnergyCurrent = robotConfig.energy.current;
 			  	window.opener.refreshRobotEnergyStatus();
 	  			//window.opener.robot.program.stop();
 			  	refreshWallMetaSourceCode();
@@ -344,6 +345,7 @@
 			});
 			folderRobot.add( robotConfig.fuel, 'current',0).step(1).name("FuelCurrent").listen().onChange( function(){
 			   	window.opener.robotConfigs.fuel.current = robotConfig.fuel.current;
+				window.opener.orginalBotFuelCurrent = robotConfig.fuel.current;
 			  	window.opener.refreshRobotFuelStatus();
 	  			//window.opener.robot.program.stop();
 			  	refreshWallMetaSourceCode();
