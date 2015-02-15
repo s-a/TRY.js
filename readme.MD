@@ -12,7 +12,7 @@ So far this web app is developed and ***tested with Google Chrome***. Anyway you
 ***Share your work***  
 All your work can be saved on [Google Drive™](https://drive.google.com) where you can share your work with your friends. You need a [Google™ account](https://accounts.google.com/SignUp "Create your Google Account") to use this feature. However this is optional. You can easily quick share something with a click on the ```Package / ShareViaLink``` menu item. This will load a new window where you can copy the URL to share.  
 
-To publish your work world wide visit [channel.try.js](https://github.com/s-a/channel.try.js) and follow the instructions. There are some packages available containg an environment, a test suite and a robot program for demonstration purposes. A robot program is optional so you can create different levels for TRY.js. I would be happy to see various mutations and receive pull requests there.
+To publish your work world wide visit [channel.try.js](https://github.com/s-a/channel.try.js) and follow the instructions. The channel.json points to different codes in external repositories. There are some packages available containg an environment, a test suite and a robot program for demonstration purposes. A robot program is optional so you can create different levels for TRY.js. I would be happy to see various mutations and receive pull requests there. If you do not want create your repo add your codes to [examples.try.js](https://github.com/s-a/examples.try.js).
 
 ## Learn TRY.js in a few minutes
 
