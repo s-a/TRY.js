@@ -5,7 +5,7 @@
 
 TRY.js is supposed to programm a virtual robot which moves in a 3D environment able to pick up and unload objects. The program gives beginners a first insight into the world of computer programming.
 
-Due to the ease of use and the limited instruction set TRY.js is well suited for the introduction to programming, especially for learning the programming language JavaScript. It gives an overview about [synchronious and asynchronious codes](https://github.com/s-a/TRY.js/blob/development/docs/robot.MD) as well as [test driven development](/docs/tests.MD).  
+Due to the ease of use and the limited [instruction set](https://github.com/s-a/TRY.js/blob/development/docs/robot.MD) TRY.js is well suited for the introduction to programming, especially for learning the programming language JavaScript. It gives an overview about [synchronious and asynchronious codes](https://github.com/s-a/TRY.js/blob/development/docs/robot.MD) as well as [test driven development](/docs/tests.MD).  
 
 So far this web app is developed and ***tested with Google Chrome***. Anyway you are welcome to send possible [bug reports](https://github.com/s-a/try.js/issues) and/or [fixes](https://github.com/s-a/try.js).  
 
@@ -32,7 +32,7 @@ A click on the ```Package / Open``` menu item will show a list of [avilable](htt
 
 ### [Robot API](/docs/robot.MD) - Create and edit your own robot programs
 
-### [Test API](/docs/tests.MD) - Create and edit tests
+### [Test API](/docs/tests.MD) - Create and edit test suites
 
 ## Miscellaneous
 
