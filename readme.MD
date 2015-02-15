@@ -7,7 +7,14 @@
 
 Due to the ease of use and the limited [instruction set](https://github.com/s-a/TRY.js/blob/development/docs/robot.MD) [TRY.js](http://s-a.github.io/TRY.js/) is well suited for the introduction to programming, especially for learning the programming language JavaScript. It gives an overview about [synchronious and asynchronious codes](https://github.com/s-a/TRY.js/blob/development/docs/robot.MD) as well as [test driven development](/docs/tests.MD).  
 
-So far this web app is developed and ***tested with Google Chrome***. Anyway you are welcome to send possible [bug reports](https://github.com/s-a/try.js/issues) and/or [fixes](https://github.com/s-a/try.js).  
+This web app is ***developed with Google Chrome***.  
+ - Google Chrome on Windows 7 32bit (Version 40.0.2214.111 m) OK
+ - Opera on Windows 7 32bit (Version 25.0) OK
+ - Firefox on Windows 7 32bit (Version 35.0.1) Toolbar icon display and perfomance issues
+ - Internet Explorer on Windows 7 32bit (Version 11.0.16) FAIL
+ - Safari on Windows 7 32bit (Version 5.1.7) FAIL
+
+Anyway you are welcome to send possible [bug reports](https://github.com/s-a/try.js/issues) and/or [fixes](https://github.com/s-a/try.js).  
 
 ***Share your work***  
 All your work can be saved on [Google Drive™](https://drive.google.com) where you can share your work with your friends. You need a [Google™ account](https://accounts.google.com/SignUp "Create your Google Account") to use this feature. However this is optional. You can easily quick share something with a click on the ```Package / ShareViaLink``` menu item. This will load a new window where you can copy the URL to share.  
