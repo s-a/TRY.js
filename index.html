@@ -97,10 +97,15 @@
 
 
 		#state{
+			background-color: #1A2B42;
+			color: #0C141F;
 			position: absolute;
-			top: 45px;
-			left: 45px;
+			top: 5px;
+			left: 5px;
 			z-index: 1;
+			width: 97%;
+			opacity: 0.9;
+			border-radius: 5px;
 		}
       	.dg.ac {
 			z-index: 1000 !important;
@@ -116,22 +121,20 @@
 			width: 22px;
 			height: 22px;
 		}
-		.menu{
-			background-color: #F8F8FF;
-			color: #0D0D0D;
+		.menu { 
 			border-radius: 5px;
 			border-style: solid;
-			border-width: 3px;
+			border-width: 1px;
 			padding: 11px;
 			float: left;
-			 
+			width: 100%;
 		}
 		core-icon:hover {
-			color:green;
+			color:#DF740C;
 		}
 
 		core-icon {
-			color: #0D0D0D;
+			color: #6FC3DF;
 		}
 
 		.menu a {
@@ -146,6 +149,16 @@
 			margin: -5px;
 			padding: 0;
 		}
+
+		#robot__capacity__status, #robot__energy__status{
+			color: white;
+		}
+
+		.toast-top-center { 
+		    top: 12px; 
+		    left: 50%; 
+		    margin-left: -150px; 
+		} 
 	</style>
 </head>
 <body>
