@@ -1,7 +1,7 @@
 ### Todo's
 
- - single test does not display result after engine.test();
- - teleport callback raises to early ?!
+ - add wall movable property; 
+ - single test does not display result after engine.test(); 
  - Keep current drive documents by url get parm ids! (reset them on package load!)
  - parse "grep" url parm to run single test suite
  - special stations have different effects: 
