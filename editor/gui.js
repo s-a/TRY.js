@@ -372,6 +372,9 @@
 			  	refreshWallMetaSourceCode();
 			});
 
+			/*
+			FIXME:
+			conflicts with updatePhysics
 			folderRobot.add( robotConfig.position, 'x').name("PositionX").listen().onChange( function(){
 			   	engine.android.position.x = robotConfig.position.x;
 			   	window.opener.engine.originalBotPosition.x = robotConfig.position.x;
@@ -381,7 +384,7 @@
 			   	engine.android.position.z = robotConfig.position.z;
 			   	window.opener.engine.originalBotPosition.z = robotConfig.position.z;
 			  	refreshWallMetaSourceCode();
-			});
+			});*/
 
 			folderHomeBox.add( homeBoxConfig, 'x').name("PositionX").listen().onChange( function(){
 			   	engine.homeBox.position.x = homeBoxConfig.x;
