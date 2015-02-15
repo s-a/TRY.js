@@ -165,6 +165,7 @@
 		},
 		addWall : function() {
 			engine.wall.add();
+			window.opener.originalWallPositions = engine.wall.meta();
 			refreshWallMetaSourceCode();
 		},
 		addFlower : function() {
@@ -201,6 +202,7 @@
 		removeWall : function() {
 			if (engine.selected){
 				engine.wall.remove(engine.selected);
+				window.opener.originalWallPositions = engine.wall.meta();
 				window.opener.robot.program.stop();
 				refreshWallMetaSourceCode();
 				engine.selected = null;
@@ -270,11 +272,13 @@
 
 			folderSelectedWall.add( boxConfig.position, 'x' ).step(10).name("PositionX").listen().onChange( function(){
 			  	engine.selected.position.x = (+boxConfig.position.x);
+				window.opener.originalWallPositions = engine.wall.meta();
 	  			window.opener.robot.program.stop();
 			  	refreshWallMetaSourceCode();
 			});
 			folderSelectedWall.add( boxConfig.position, 'z' ).step(10).name("PositionZ").listen().onChange( function(){
 			  	engine.selected.position.z = (+boxConfig.position.z);
+				window.opener.originalWallPositions = engine.wall.meta();
 		  		window.opener.robot.program.stop();
 			  	refreshWallMetaSourceCode();
 			});
