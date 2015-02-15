@@ -3,9 +3,9 @@
 ![Google Drive™](/drive_outline-small.png?raw=true "Google Drive™")
 
 
-TRY.js is supposed to programm a virtual robot which moves in a 3D environment able to pick up and unload objects. The program gives beginners a first insight into the world of computer programming.
+[TRY.js](http://s-a.github.io/TRY.js/) is supposed to programm a virtual robot which moves in a 3D environment able to pick up and unload objects. The program gives beginners a first insight into the world of computer programming.
 
-Due to the ease of use and the limited [instruction set](https://github.com/s-a/TRY.js/blob/development/docs/robot.MD) TRY.js is well suited for the introduction to programming, especially for learning the programming language JavaScript. It gives an overview about [synchronious and asynchronious codes](https://github.com/s-a/TRY.js/blob/development/docs/robot.MD) as well as [test driven development](/docs/tests.MD).  
+Due to the ease of use and the limited [instruction set](https://github.com/s-a/TRY.js/blob/development/docs/robot.MD) [TRY.js](http://s-a.github.io/TRY.js/) is well suited for the introduction to programming, especially for learning the programming language JavaScript. It gives an overview about [synchronious and asynchronious codes](https://github.com/s-a/TRY.js/blob/development/docs/robot.MD) as well as [test driven development](/docs/tests.MD).  
 
 So far this web app is developed and ***tested with Google Chrome***. Anyway you are welcome to send possible [bug reports](https://github.com/s-a/try.js/issues) and/or [fixes](https://github.com/s-a/try.js).  
 
@@ -14,7 +14,7 @@ All your work can be saved on [Google Drive™](https://drive.google.com) where 
 
 To publish your work world wide visit [channel.try.js](https://github.com/s-a/channel.try.js) and follow the instructions. The channel.json points to different codes in external repositories. There are some packages available containg an environment, a test suite and a robot program for demonstration purposes. A robot program is optional so you can create different levels for TRY.js. I would be happy to see various mutations and receive pull requests there. If you do not want create your own repo create your own folder and add your codes to [examples.try.js](https://github.com/s-a/examples.try.js).
 
-## Learn TRY.js in a few minutes
+## Learn [TRY.js](http://s-a.github.io/TRY.js/) in a few minutes
 
 ### Mouse orbit control
  - Left Click + Mouse move: Rotate view
@@ -46,7 +46,7 @@ Feel free to write me your thoughts.
 A click on the ```About / Donate``` menu item will open a donation dialog.
 
 ### Improve the code
-Forks are welcome but please create a new branch. There is a client side test method available ```window.engine.test();```. The method shild be invoke via console and tests all packages from [channel.try.js](https://github.com/s-a/channel.try.js) in one suite. This should help to keep the code stable.
+Forks are welcome but please create a new branch. There is a client side test method available ```window.engine.test();```. The method should be invoked via console and tests all packages from [channel.try.js](https://github.com/s-a/channel.try.js) in one suite. This should help to keep the code stable.
 
 ***[TRY JavaScript now online](http://s-a.github.io/TRY.js/ "") and create something awesome!***
 
