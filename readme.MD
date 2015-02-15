@@ -12,7 +12,7 @@ So far this web app is developed and ***tested with Google Chrome***. Anyway you
 ***Share your work***  
 All your work can be saved on [Google Drive™](https://drive.google.com) where you can share your work with your friends. You need a [Google™ account](https://accounts.google.com/SignUp "Create your Google Account") to use this feature. However this is optional. You can easily quick share something with a click on the ```Package / ShareViaLink``` menu item. This will load a new window where you can copy the URL to share.  
 
-To publish your work world wide visit [channel.try.js](https://github.com/s-a/channel.try.js) and follow the instructions. The channel.json points to different codes in external repositories. There are some packages available containg an environment, a test suite and a robot program for demonstration purposes. A robot program is optional so you can create different levels for TRY.js. I would be happy to see various mutations and receive pull requests there. If you do not want create your repo add your codes to [examples.try.js](https://github.com/s-a/examples.try.js).
+To publish your work world wide visit [channel.try.js](https://github.com/s-a/channel.try.js) and follow the instructions. The channel.json points to different codes in external repositories. There are some packages available containg an environment, a test suite and a robot program for demonstration purposes. A robot program is optional so you can create different levels for TRY.js. I would be happy to see various mutations and receive pull requests there. If you do not want create your own repo create your own folder and add your codes to [examples.try.js](https://github.com/s-a/examples.try.js).
 
 ## Learn TRY.js in a few minutes
 
@@ -23,7 +23,7 @@ To publish your work world wide visit [channel.try.js](https://github.com/s-a/ch
 
 
 ### Load example presets
-A click on the ```Package / Open``` menu item will show a list of avilable examples.
+A click on the ```Package / Open``` menu item will show a list of [avilable](https://github.com/s-a/channel.try.js) [examples](https://github.com/s-a/examples.try.js).
 
 
 ## Developer API guidelines
@@ -46,10 +46,7 @@ Feel free to write me your thoughts.
 A click on the ```About / Donate``` menu item will open a donation dialog.
 
 ### Improve the code
-Forks are welcome but please create a new branch. There is a client side test method available ```engine.test();```. The method tests all packages from [channel.try.js](https://github.com/s-a/channel.try.js). This should help to keep the code stable.
-
-### Screenshot (old)
-![TRY.js](/screenshot.png?raw=true "TRY.js")
+Forks are welcome but please create a new branch. There is a client side test method available ```window.engine.test();```. The method shild be invoke via console and tests all packages from [channel.try.js](https://github.com/s-a/channel.try.js) in one suite. This should help to keep the code stable.
 
 ***[TRY JavaScript now online](http://s-a.github.io/TRY.js/ "") and create something awesome!***
 
