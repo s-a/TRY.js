@@ -274,15 +274,25 @@
 			folderSelectedWall.add( boxConfig.position, 'x' ).step(10).name("PositionX").listen().onChange( function(){
 			  	engine.selected.position.x = (+boxConfig.position.x);
 				window.opener.originalWallPositions = engine.wall.meta();
-	  			window.opener.robot.program.stop();
+	  			window.opener.robot.program.abort = true;
+	  			engine.android.position.y = 50000;
+	  			window.opener.updatePhysics()
+	  			window.opener.robot.program.abort = false;
 			  	refreshWallMetaSourceCode();
 			});
 			folderSelectedWall.add( boxConfig.position, 'z' ).step(10).name("PositionZ").listen().onChange( function(){
 			  	engine.selected.position.z = (+boxConfig.position.z);
 				window.opener.originalWallPositions = engine.wall.meta();
-		  		window.opener.robot.program.stop();
+	  			window.opener.robot.program.abort = true;
+	  			engine.android.position.y = 50000;
+	  			window.opener.updatePhysics()
+	  			window.opener.robot.program.abort = false;
+		  		//window.opener.robot.program.stop();
 			  	refreshWallMetaSourceCode();
 			});
+			folderSelectedWall.add( boxConfig.scale, 'x', 5, 10000 ).step(10).name("ScaleX").listen().onChange(refreshWallGeometry);
+			folderSelectedWall.add( boxConfig.scale, 'y', 50, 1000 ).step(10).name("ScaleY").listen().onChange(refreshWallGeometry);
+			folderSelectedWall.add( boxConfig.scale, 'z', 5, 10000 ).step(10).name("ScaleZ").listen().onChange(refreshWallGeometry);
 
 			folderFlower.add( flowerConfig.position, 'x' ).step(10).name("PositionX").listen().onChange( function(){
 			  	engine.selectedFlower.position.x = (+flowerConfig.position.x);
@@ -303,9 +313,6 @@
 		  		//window.opener.robot.program.stop();
 			  	refreshWallMetaSourceCode();
 			});
-			folderSelectedWall.add( boxConfig.scale, 'x', 5, 10000 ).step(10).name("ScaleX").listen().onChange(refreshWallGeometry);
-			folderSelectedWall.add( boxConfig.scale, 'y', 50, 1000 ).step(10).name("ScaleY").listen().onChange(refreshWallGeometry);
-			folderSelectedWall.add( boxConfig.scale, 'z', 5, 10000 ).step(10).name("ScaleZ").listen().onChange(refreshWallGeometry);
 
 			folderSelectedStation.add( cmd, 'removeStation' ).name("Remove");
 // callbacks
