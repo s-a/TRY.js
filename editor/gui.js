@@ -251,6 +251,7 @@
 	var refreshWallGeometry = function(){
 	   	engine.wall.remove(engine.selected);
 	   	engine.wall.add(boxConfig);
+	  	window.opener.originalWallPositions = engine.wall.meta();
 		window.opener.robot.program.stop();
 	  	refreshWallMetaSourceCode();
 	}
