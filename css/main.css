@@ -134,9 +134,9 @@ core-icon {
 	border-left: 3px solid #6FC3DF !important;
 }
 
-.entry-open{
-	margin: 99px;
+.entry-open{ 
 	display: none;
+	text-align: center;
 }
 
 
