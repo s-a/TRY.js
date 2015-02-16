@@ -131,7 +131,7 @@ Charges the robot battery.
 ##### Example
 ```javascript
 if (this.charge()){
-    alert("The robot is in a energy box!");
+    alert("The robot is charged!");
 });  
 ```
 ---
@@ -143,7 +143,7 @@ Refuels the robot' s jet pack.
 ##### Example
 ```javascript
 if (this.refuel()){
-    alert("The robot is in a energy box!");
+    alert("The robot is fueled!");
 });  
 ```
 ---

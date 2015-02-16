@@ -50,6 +50,9 @@ A click on the ```social share icon``` in the upper left corner item will open a
 ### [Trouble shooting, bug reports, ideas or questions](https://github.com/s-a/TRY.js/issues)
 Feel free to write me your thoughts.
 
+### [Roadmap](docs/todo.MD)
+Feel free to leave [feature requests](https://github.com/s-a/TRY.js/issues).
+
 ### [Donate](http://s-a.github.io/TRY.js/)
 A click on the ```About / Donate``` menu item will open a donation dialog.
 
