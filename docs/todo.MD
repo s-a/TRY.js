@@ -2,7 +2,7 @@
 
  - env help text; 
  - robo help text for .push(); 
- - add sound; 
+ - add push demo; 
  - add Robot.canPush(); 
  - Keep current drive documents by url get parm ids! (reset them on package load!)
  - add robot.strength; (move multiple walls)
