@@ -50,11 +50,11 @@
 				<core-icon id="program__run__state" class="menu__button" icon="android"></core-icon>
 			</a>
 		  	<core-icon class="menu__button" icon="maps:local-florist"></core-icon>
-		  	<sub id="robot__capacity__status"></sub>
+		  	<sub id="robot__capacity__status" class="status-text"></sub>
 		  	<core-icon id="robot__energy" class="menu__button" label="Robot energy status"></core-icon>
-		  	<sub id="robot__energy__status"></sub>
+		  	<sub id="robot__energy__status" class="status-text"></sub>
 		  	<canvas id="fuel-gauge" title="Fuel"></canvas>
-		  	<span id="tooltip"></span>
+		  	<span id="tooltip" class="status-text"></span>
 		</div>
 	</core-menu-button>
 	<canvas id="maze"></canvas>
@@ -89,6 +89,7 @@
 	     if (!expr) throw new Error(msg || 'failed');
 	   }
 	 </script>
+  	<script src="lib/SoundJS/lib/soundjs-0.6.0.min.js"></script>
   	<script src="js/Three.js"></script>
 	<script src="js/Detector.js"></script>
 	<script src="js/Stats.js"></script>

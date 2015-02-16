@@ -1,0 +1,20 @@
+.DS_Store
+build/output/
+build/tmp/
+*TMP*
+node_modules/
+spikes/
+.idea/
+*.sublime-project
+*.sublime-workspace
+config.local.json
+docs/**/
+
+#-----------------------------
+# INVALID FILES
+# (for cross OS compatibility)
+#-----------------------------
+*[\<\>\:\"\/\\\|\?\*]*
+**/.sass-cache/
+main.css
+*.codekit

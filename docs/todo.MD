@@ -2,8 +2,10 @@
 
  - env help text; 
  - robo help text for .push(); 
- - add Robbot.canPush(); 
+ - add sound; 
+ - add Robot.canPush(); 
  - Keep current drive documents by url get parm ids! (reset them on package load!)
+ - add robot.strength; (move multiple walls)
  - parse "grep" url parm to run single test suite
  - special stations have different effects: 
   - simple elevator station

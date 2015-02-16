@@ -116,7 +116,7 @@ core-icon {
 	padding: 0;
 }
 
-#robot__capacity__status, #robot__energy__status{
+#robot__capacity__status, #robot__energy__status, #tooltip{
 	color: #DF740C;
 }
 
