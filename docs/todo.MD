@@ -1,5 +1,7 @@
 ### Todo's
 
+ - env help text; 
+ - robo help text for .push(); 
  - add wall movable property; 
  - single test does not display result after engine.test(); 
  - Keep current drive documents by url get parm ids! (reset them on package load!)

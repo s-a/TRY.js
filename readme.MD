@@ -7,13 +7,6 @@
 
 Due to the ease of use and the limited [instruction set](https://github.com/s-a/TRY.js/blob/development/docs/robot.MD) [TRY.js](http://s-a.github.io/TRY.js/) is well suited for the introduction to programming, especially for learning the programming language JavaScript. It gives an overview about [synchronious and asynchronious codes](https://github.com/s-a/TRY.js/blob/development/docs/robot.MD) as well as [test driven development](/docs/tests.MD).  
 
-This web app is ***developed with Google Chrome***.  
- - Google Chrome on Windows 7 32bit (Version 40.0.2214.111 m) OK
- - Opera on Windows 7 32bit (Version 25.0) OK
- - Firefox on Windows 7 32bit (Version 35.0.1) Toolbar icon display and perfomance issues
- - Internet Explorer on Windows 7 32bit (Version 11.0.16) FAIL
- - Safari on Windows 7 32bit (Version 5.1.7) FAIL
-
 Anyway you are welcome to send possible [bug reports](https://github.com/s-a/try.js/issues) and/or [fixes](https://github.com/s-a/try.js).  
 
 ***Share your work***  
@@ -42,6 +35,14 @@ A click on the ```Package / Open``` menu item will show a list of [avilable](htt
 ### [Test API](/docs/tests.MD) - Create and edit test suites
 
 ## Miscellaneous
+
+### Browser Support
+This web app is ***developed with Google Chrome*** and tested with the following desktop browsers.  
+ - Google Chrome on Windows 7 32bit (Version 40.0.2214.111 m) OK
+ - Opera on Windows 7 32bit (Version 25.0) OK
+ - Firefox on Windows 7 32bit (Version 35.0.1) Toolbar icon display and perfomance issues
+ - Internet Explorer on Windows 7 32bit (Version 11.0.16) FAIL
+ - Safari on Windows 7 32bit (Version 5.1.7) FAIL
 
 ### [Share it on your social network](http://s-a.github.io/TRY.js/)
 A click on the ```social share icon``` in the upper left corner item will open a share dialog.
