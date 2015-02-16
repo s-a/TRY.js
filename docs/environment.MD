@@ -9,8 +9,21 @@ For example: [basic-environment.json](https://github.com/s-a/examples.try.js/blo
 
 ### Environment Objects
 
-todo: descripe the object poperties...
 #### Robot
+ - ...
+ - position
+
 #### Walls
+ - geometry
+ - position
+ - movable
+
 #### Flowers
+ - position
+
 #### Stations
+ - type
+  - energy: gives the robot the possibility to [charge](robot.MD#robotcharge) the battery
+  - teleport: gives the robot the possibility to [teleport](robot.MD#robotteleport) to any location 
+  - fuel: gives the robot the possibility to [refuel](robot.MD#robotrefuel) the jet pack
+ - position

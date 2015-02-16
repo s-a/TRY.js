@@ -163,6 +163,21 @@ this.teleport({x:0, y:0, z:0}, function(){
 ```
 ---
 
+### Robot.push()
+Pushes a movable wall object forward.
+ - ***Returns*** Boolean
+ - ***Parameters***
+   - ```Count``` (Integer) Optional number of forward pushes (default 1)
+   - ```onComplete``` (Function) Optional callback method.
+
+##### Example
+```javascript
+this.push(10, function(){
+    alert("Robot pushed the wall 10 times.");
+});  
+```
+---
+
 
 ## Robot.sensor  
 The robot has several sensors that allow him to perceive its environment.
