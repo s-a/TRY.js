@@ -17,6 +17,7 @@
 			y:5,
 			z:5,
 		}
+		this.movable = false;
 	};
 	var flowerConfig = window.flowerConfig = {
 		position : {
@@ -51,6 +52,8 @@
 		docName : ""
 	};
 	var boxConfig = window.boxConfig = new BoxConfig();
+
+	if (window.opener.engine.selected) {boxConfig.movable = !!window.opener.engine.selected.userData.movable};
 	var stationConfig = window.stationConfig = {
 		type : 'energy',
 		position:{
@@ -166,6 +169,12 @@
 		addWall : function() {
 			engine.wall.add();
 			window.opener.originalWallPositions = engine.wall.meta();
+		    boxConfig.position.z = window.opener.engine.selected.position.z;
+		    boxConfig.position.x = window.opener.engine.selected.position.x;
+			boxConfig.scale.x = window.opener.engine.selected.geometry.width;
+			boxConfig.scale.y = window.opener.engine.selected.geometry.height;
+			boxConfig.scale.z = window.opener.engine.selected.geometry.depth;			
+			boxConfig.movable = !!window.opener.engine.selected.userData.movable;
 			refreshWallMetaSourceCode();
 		},
 		addFlower : function() {
@@ -269,6 +278,11 @@
 			var folderRobot = gui.addFolder('Robot');
 			var folderHomeBox = gui.addFolder('HomeBox');
 			folderSelectedWall.add( cmd, 'removeWall' ).name("Remove");
+			
+          	folderSelectedWall.add(boxConfig, 'movable').name("Movable").listen().onChange( function(){
+          		if (window.opener.engine.selected){window.opener.engine.selected.userData.movable = boxConfig.movable;}
+			  	refreshWallMetaSourceCode();
+			});
 
 
 			folderSelectedWall.add( boxConfig.position, 'x' ).step(10).name("PositionX").listen().onChange( function(){
