@@ -110,8 +110,8 @@ core-icon {
     opacity: 1 !important;
 }
 #fuel-gauge{
-	height: 24px;
-	width: 48px;
+	height: 24px !important;
+	width: 48px !important;
 	margin: -5px;
 	padding: 0;
 }
