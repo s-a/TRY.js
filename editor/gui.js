@@ -280,7 +280,10 @@
 			folderSelectedWall.add( cmd, 'removeWall' ).name("Remove");
 			
           	folderSelectedWall.add(boxConfig, 'movable').name("Movable").listen().onChange( function(){
-          		if (window.opener.engine.selected){window.opener.engine.selected.userData.movable = boxConfig.movable;}
+          		if (window.opener.engine.selected){
+          			debugger;
+          			window.opener.engine.selected.userData.setMovable (boxConfig.movable);
+          		}
 			  	refreshWallMetaSourceCode();
 			});
 
