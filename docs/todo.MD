@@ -1,11 +1,10 @@
 ### Todo's
 
- - add push demo; 
  - add Robot.canPush(); 
  - Keep current drive documents by url get parm ids! (reset them on package load!)
- - RC1
  - add robot.strength; (to move multiple walls)
  - parse "grep" url parm to run single test suite
+
  - special stations have different effects: 
   - simple elevator station
   - robot becomes smaller (for x moves)
