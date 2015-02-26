@@ -48,7 +48,7 @@ this.move("forward", function(){
 
 ---
 ### Robot.turn()
-Turns the robot into the desired direction.
+Turns the robot to desired direction.
  - ***Parameters***
    - ```Direction``` (String)
      - Possbile values:
@@ -199,14 +199,12 @@ Determines if the robot is within a teleport station.
 
 ---
 ### Robot.sensor.position()
-Determines if the robot is within his homebox.
+Return the current position of the robot.
  - ***Returns*** Position object which contains x, y, z coordinates.
 
 ##### Example
 ```javascript
-if (this.sensor.atHome()){
-    alert("The robot is at home!");
-});  
+console.log(this.sensor.position());
 ```
 ---
 ### Robot.sensor.canGet()
@@ -289,7 +287,7 @@ Well writing async code is cool to solve complex problems but it often results i
 
 ### Robot.do()
  - ***Parameters***
-   - ```command``` 		(String) An available robot method name.
+   - ```command``` 		(String) An available robot [method name](robot.MD#overview).
    - ```parameter``` 	(Object) A parameter for the used command.
   
 ##### Example
