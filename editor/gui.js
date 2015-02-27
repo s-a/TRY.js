@@ -223,6 +223,11 @@
 			var source = window.editor.getValue();
 			window.opener.robot.program.load(source);
 		},
+		assign_program_source_code_and_run : function() {
+			var source = window.editor.getValue();
+			window.opener.robot.program.load(source);
+			window.opener.robot.program.run();
+		},
 		assign_environment_source_code : function() {
 			var source = window.editor.getValue();
 			window.opener.engine.loadEnvironment(JSON.parse(source));
@@ -461,6 +466,7 @@
           	break;
         case "program":
 			gui.add(cmd, 'assign_program_source_code').name("AssignCode");
+			gui.add(cmd, 'assign_program_source_code_and_run').name("AssignCode & Run");
           	break;
         case "tests":
           	gui.add(cmd, 'assign_test_source_code').name("AssignCode");
