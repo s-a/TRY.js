@@ -163,7 +163,7 @@ module.exports = function(grunt) {
 		grunt.loadNpmTasks('grunt-mocha-slimer');
 		// Default Production Build task(s).
 		grunt.registerTask('browser_test', [
-			'fetch-packages',
+			//'fetch-packages',
 		 	'mocha_slimer'
 		]);
 
