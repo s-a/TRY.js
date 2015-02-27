@@ -3,11 +3,11 @@
   "author": "Stephan Ahlf",
   "copyright": "ALL RIGHTS RESERVED",
   "preferGlobal": false,
-  "description": "",
-  "repository" : "",
-  "version": "0.0.1",
+  "description": "JavaScript Robot Program Simulation",
+  "repository" : "https://github.com/s-a/try.js",
+  "version": "0.1.1",
   "scripts": {
-    "test": "mocha"
+    "test": "grunt browser_test"
   },
   "engines": {
     "node": ">=0.10.33"
