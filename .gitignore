@@ -1,6 +1,7 @@
 *.sublime-project
 *.sublime-workspace
 node_modules
+temp
 video
 *.log
 *.dmp

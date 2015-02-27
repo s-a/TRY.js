@@ -16,6 +16,11 @@
 
   },
   "devDependencies": {
-
+    "atob":"",
+    "grunt":"",
+    "grunt-bump":"",
+    "grunt-mocha-slimer":"",
+    "mkdirp":"",
+    "request":""
   }
 }
