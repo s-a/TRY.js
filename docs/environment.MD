@@ -10,20 +10,27 @@ Press `Document / New` to create a new Google Drive document.
 ### Environment Objects
 
 #### Robot
- - ...
- - position
+ - current energy
+ - maximum energy
+ - current fuel
+ - maximum fuel
+ - current capacity (number of loaded flowers)
+ - maximum capacity (maximum of flowers the robot can pick up)
 
 #### Walls
- - geometry
- - position
- - movable
+ - geometry (scale x, y, z)
+ - position (x, z)
+ - movable (Boolean)
 
 #### Flowers
- - position
+ - position (x, y, z)
 
 #### Stations
  - type
-  - energy: gives the robot the possibility to [charge](robot.MD#robotcharge) the battery
-  - teleport: gives the robot the possibility to [teleport](robot.MD#robotteleport) to any location 
-  - fuel: gives the robot the possibility to [refuel](robot.MD#robotrefuel) the jet pack
- - position
+  - energy (yellow): gives the robot the possibility to [charge](robot.MD#robotcharge) the battery
+  - teleport (red): gives the robot the possibility to [teleport](robot.MD#robotteleport) to any location 
+  - fuel (white): gives the robot the possibility to [refuel](robot.MD#robotrefuel) the jet pack
+ - position (x, y, z)
+
+ #### Home Box (Black)
+ - position (x, y, z)
