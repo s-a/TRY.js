@@ -144,7 +144,7 @@ module.exports = function(grunt) {
 		                reporter: 'Spec',
 		                //grep: 'some keyword',
 		                // SlimerJS timeout
-		                timeout: 1000 * 60 * 2,
+		                timeout: 1000 * 60 * 15,
 		                // set to false and call it later for async tests (AMD etc)
 		                run: false,
 		                // run SlimerJS via 'xvfb-run': for true headless testing
