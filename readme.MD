@@ -73,7 +73,7 @@ However I suggest the following workflow:
  - ```node server.js``` to start the webserver.  
  - open ```http://localhost:3000/``` in your browser and enjoy :).  
  - improve the code. Yeah!  
- - ```npm test``` ***to test you changes*** (change ```Gruntfile.js``` grep settings to run single tests).  
+ - ```npm test``` ***to test your changes*** (change ```Gruntfile.js``` grep settings to run single tests).  
  - ```git add .```  
  - ```git commit -am "I fixed or improved something"```  
  - ```git push```  
