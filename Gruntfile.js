@@ -149,7 +149,7 @@ module.exports = function(grunt) {
 		                // must be true on Travis-CI, use: (process.env.TRAVIS === 'true')
 		                xvfb: (process.env.TRAVIS === 'true'),
 		                // pass http urls (use grunt-contrib-connect etc)
-		                urls: ['http://localhost/robot.js/'],
+		                urls: [process.env.TRAVIS === 'true' ? 'http://localhost:9292/' : 'http://localhost/try.js/'],
 		                "webSecurity": false
 		            }
 
