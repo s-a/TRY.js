@@ -3,7 +3,7 @@
 ![Google Drive™](/drive_outline-small.png?raw=true "Google Drive™")  
 
 Production: [<img src="https://travis-ci.org/s-a/TRY.js.svg?branch=master" />](https://travis-ci.org/s-a/try.js "master test state")  
-Development: [<img src="https://travis-ci.org/s-a/TRY.js.svg?branch=development" />](https://travis-ci.org/s-a/try.js "development test state")  
+Development: [<img src="https://travis-ci.org/s-a/TRY.js.svg?branch=development" />](https://travis-ci.org/s-a/TRY.js "development test state")  
 
 
 [TRY.js](http://s-a.github.io/TRY.js/) is supposed to programm a virtual robot which moves in a 3D environment able to pick up and unload objects. The program gives beginners a first insight into the world of computer programming.
@@ -60,7 +60,24 @@ Feel free to leave [feature requests](https://github.com/s-a/TRY.js/issues).
 A click on the ```About / Donate``` menu item will open a donation dialog.
 
 ### Improve the code
-Forks are welcome but please create a new branch. There is a client side test method available ```window.engine.test();```. The method should be invoked via console and tests all packages from [channel.try.js](https://github.com/s-a/channel.try.js) in one suite. This should help to keep the code stable.
+Forks are welcome but please create a new branch first before submit pull requests. There is a client side test method available ```window.engine.test();```. The method can be invoked via console and tests all packages from [channel.try.js](https://github.com/s-a/channel.try.js) in one suite. This should help to keep the code stable.  
+The website needs a webserver. You can use any webserver, but this repository contains a lightweight [Node.js®](http://nodejs.org/) webserver which will also help to run the headless tests. The headless test expects the website live at ```http://localhost:3000/```. You can change this in the ```Gruntfile.js``` settings section.  
+
+
+However I suggest the following workflow:
+ - install [Node.js®](http://nodejs.org/) from http://nodejs.org/ on your system.
+ - ```git clone https://github.com/s-a/TRY.js.git``` to clone the repo.  
+ - ```cd TRY.js```  
+ - ```git branch your-feature``` or "your-bugfix" to create your own branch.  
+ - ```npm install``` to install develpment dependencies.  
+ - ```node server.js``` to start the webserver.  
+ - open ```http://localhost:3000/``` in your browser and enjoy :).  
+ - improve the code. Yeah!  
+ - ```npm test``` ***to test you changes*** (change ```Gruntfile.js``` grep settings to run single tests).  
+ - ```git add .```  
+ - ```git commit -am "I fixed or improved something"```  
+ - ```git push```  
+ - create a pull request  
 
 
 ### Credits
