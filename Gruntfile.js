@@ -134,8 +134,10 @@ module.exports = function(grunt) {
 
 
 		grunt.initConfig({
-		    mocha_slimer: {
-		    	"fetch-packages" : {},
+	    	"fetch-packages" : {
+		        "browser_test": {}
+        	},
+		    "mocha_slimer": {
 		        "browser_test": {
 		            options: {
 		                ui: 'bdd',
@@ -151,7 +153,6 @@ module.exports = function(grunt) {
 		                // pass http urls (use grunt-contrib-connect etc)
 		                urls: ["http://localhost:3000/"]
 		            }
-
 			  	}
 			}
 		});
