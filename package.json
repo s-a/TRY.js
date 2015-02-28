@@ -16,6 +16,7 @@
 
   },
   "devDependencies": {
+    "forever":"",
     "express":"",
     "atob":"",
     "grunt":"",
