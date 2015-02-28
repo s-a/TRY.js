@@ -17,5 +17,13 @@
     "tests"
   ],
   "dependencies": { 
+    "jquery": "",
+    "polymer": "",
+    "toastr": "",
+    "webcomponentsjs": "",
+    "Polymer/core-icon": "",
+    "Polymer/core-icons": "",
+    "Polymer/core-iconset": "",
+    "Polymer/core-iconset-svg": ""
   }
 }
