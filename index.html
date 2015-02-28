@@ -38,8 +38,8 @@
 	</script> 
 </head>
 <body>
-	<core-menu-button id="state" icon="menu">
-		<div class="menu">
+	<core-menu-button id="state" icon="menu" class="menu">
+	 
 			<a href="https://github.com/s-a/try.js#developer-api-guidelines" target="_blank">
 				<core-icon class="menu__button" icon="social:school" title="Guides & Resources"></core-icon>
 			</a>
@@ -55,7 +55,7 @@
 		  	<sub id="robot__energy__status" class="status-text"></sub>
 		  	<canvas id="fuel-gauge" title="Fuel"></canvas>
 		  	<span id="tooltip" class="status-text"></span>
-		</div>
+
 	</core-menu-button>
 	<canvas id="maze"></canvas>
 	<div style="display:none;">
@@ -90,6 +90,7 @@
 	     if (!expr) throw new Error(msg || 'failed');
 	   }
 	 </script>
+  	<script src="components/webcomponentsjs/webcomponents.min.js"></script>
   	<script src="lib/SoundJS/lib/soundjs-0.6.0.min.js"></script>
   	<script src="js/Three.js"></script>
 	<script src="js/Detector.js"></script>
