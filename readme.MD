@@ -1,6 +1,8 @@
 # TRY.js (Beta)
 
-![Google Drive™](/drive_outline-small.png?raw=true "Google Drive™")
+![Google Drive™](/drive_outline-small.png?raw=true "Google Drive™")  
+
+[<img src="https://travis-ci.org/s-a/try.js.png" />](https://travis-ci.org/s-a/try.js "Test state")  
 
 
 [TRY.js](http://s-a.github.io/TRY.js/) is supposed to programm a virtual robot which moves in a 3D environment able to pick up and unload objects. The program gives beginners a first insight into the world of computer programming.
