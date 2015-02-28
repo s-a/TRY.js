@@ -1,6 +1,7 @@
 ### Todo's
 
- - fix browser support ; 
+ - fix full browser support for IE; 
+ - fix full browser support for Safari; 
  - add Robot.canPush(); 
  - Keep current drive documents by url get parm ids! (reset them on package load!)
  - add robot.strength; (to move multiple walls)
