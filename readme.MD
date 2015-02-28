@@ -41,11 +41,11 @@ A click on the ```Package / Open``` menu item will show a list of [avilable](htt
 
 ### Browser Support
 This web app is ***developed with Google Chrome*** and tested with the following desktop browsers.  
- - ![Chrome](/ico/chrome_64x64.png "Chrome") | Windows 7 32bit (Version 40.0.2214.111 m) ***OK***
- - ![Opera](/ico/opera_64x64.png "Opera") | Windows 7 32bit (Version 25.0) ***OK***
- - ![Firefox](/ico/firefox_64x64.png "Firefox") | Windows 7 32bit (Version 35.0.1) ***OK***
- - ![Internet Explorer](/ico/internet-explorer_64x64.png "Enternet Explorer") | Windows 7 32bit (Version 11.0.16) ***Works*** ecxept of loading packagaes.
- - ![Safari](/ico/safari_64x64.png "Safari") | Windows 7 32bit (Version 5.1.7) COMPLETE FAIL
+ - ![Chrome](/ico/chrome_32x32.png "Chrome") | Windows 7 32bit (Version 40.0.2214.111 m) ***OK***
+ - ![Opera](/ico/opera_32x32.png "Opera") | Windows 7 32bit (Version 25.0) ***OK***
+ - ![Firefox](/ico/firefox_32x32.png "Firefox") | Windows 7 32bit (Version 35.0.1) ***OK***
+ - ![Internet Explorer](/ico/internet-explorer_32x32.png "Enternet Explorer") | Windows 7 32bit (Version 11.0.16) ***Works*** ecxept of loading packagaes.
+ - ![Safari](/ico/safari_32x32.png "Safari") | Windows 7 32bit (Version 5.1.7) COMPLETE FAIL
 
 ### [Share it on your social network](http://s-a.github.io/TRY.js/)
 A click on the ```social share icon``` in the upper left corner item will open a share dialog.
