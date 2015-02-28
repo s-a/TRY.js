@@ -6,27 +6,27 @@ var mkdirp = require('mkdirp');
 var atob = require('atob');
 var url = require('url'); 
 
-	var Repo = function(setup) {
-		this.user = setup.user;
-		this.name = setup.name;
-		this.branch = setup.branch;
-	};
+var Repo = function(setup) {
+	this.user = setup.user;
+	this.name = setup.name;
+	this.branch = setup.branch;
+};
 
-	var repoChannel = new Repo({user: "s-a", name:"channel.try.js", branch:"master"});
+var repoChannel = new Repo({user: "s-a", name:"channel.try.js", branch:"master"});
 
-	var parseUrlRepoInfo = function (u) { 
-		var res =  url.parse(u);
-		res = res.pathname.split("/");
-		res.shift();
-		var userName = res.shift();
-		var repoName = res.shift();
-		var branchName = res.shift();
-		var filename = res.join("/");
-		return {
-			repo : new Repo({user: userName, name:repoName, branch:branchName}),
-			filename :filename
-		}
+var parseUrlRepoInfo = function (u) { 
+	var res =  url.parse(u);
+	res = res.pathname.split("/");
+	res.shift();
+	var userName = res.shift();
+	var repoName = res.shift();
+	var branchName = res.shift();
+	var filename = res.join("/");
+	return {
+		repo : new Repo({user: userName, name:repoName, branch:branchName}),
+		filename :filename
 	}
+}
 
 
 
@@ -149,8 +149,7 @@ module.exports = function(grunt) {
 		                // must be true on Travis-CI, use: (process.env.TRAVIS === 'true')
 		                xvfb: (process.env.TRAVIS === 'true'),
 		                // pass http urls (use grunt-contrib-connect etc)
-		                urls: [process.env.TRAVIS === 'true' ? 'http://localhost:9292/' : 'http://localhost/try.js/'],
-		                "webSecurity": false
+		                urls: ["http://localhost:3000/"]
 		            }
 
 			  	}
@@ -163,8 +162,8 @@ module.exports = function(grunt) {
 		grunt.loadNpmTasks('grunt-mocha-slimer');
 		// Default Production Build task(s).
 		grunt.registerTask('browser_test', [
-			//'fetch-packages',
+			'fetch-packages',
 		 	'mocha_slimer'
 		]);
 
-	};
+};

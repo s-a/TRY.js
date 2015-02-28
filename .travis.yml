@@ -2,8 +2,5 @@ language: node_js
 node_js:
   - "0.10"
 before_script:
-  - "export DISPLAY=:99.0"
-  - "sh -e /etc/init.d/xvfb start"
-  - sleep 3 # give xvfb some time to start
-  - rackup  # start a Web server
+  - node server.js
   - sleep 3 # give Web server some time to bind to sockets, etc
