@@ -159,7 +159,7 @@ module.exports = function(grunt) {
 
 
 		// Production Build Tools
-		grunt.loadNpmTasks('grunt-bump');
+		//grunt.loadNpmTasks('grunt-bump');
 		grunt.loadNpmTasks('grunt-mocha-slimer');
 		// Default Production Build task(s).
 		grunt.registerTask('browser_test', [
