@@ -2,6 +2,8 @@
 
 ![Google Drive™](/drive_outline-small.png?raw=true "Google Drive™")  
 
+[<img src="/chrome-experiment-badge.png?raw=true" />](https://www.chromeexperiments.com/experiment/tryjs "Chrome Experiments")  
+
 Production: [<img src="https://travis-ci.org/s-a/TRY.js.svg?branch=master" />](https://travis-ci.org/s-a/try.js "master test state")  
 Development: [<img src="https://travis-ci.org/s-a/TRY.js.svg?branch=development" />](https://travis-ci.org/s-a/TRY.js "development test state")  
 
