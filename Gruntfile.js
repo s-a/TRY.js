@@ -134,12 +134,12 @@ module.exports = function(grunt) {
 
 
 		grunt.initConfig({
-	    	/*"fetch-packages" : {
+	    	"fetch-packages" : {
 		        "browser_test": {}
-        	},*/
+        	},
 		    "mocha_slimer": {
-/*		        "browser_test": {
-*/		            options: {
+		        "browser_test": {
+		            options: {
 		                ui: 'bdd',
 		                reporter: 'Spec',
 		                //grep: 'some keyword',
@@ -154,7 +154,7 @@ module.exports = function(grunt) {
 		                urls: ["http://localhost:3000/"]
 		            }
 			  	}
-/*			}*/
+			}
 		});
 
 

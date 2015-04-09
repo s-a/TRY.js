@@ -7,7 +7,7 @@
   "repository" : "https://github.com/s-a/try.js",
   "version": "0.1.1",
   "scripts": {
-    "test": "grunt browser-test"
+    "test": "grunt browser-test:browser_test"
   },
   "engines": {
     "node": ">=0.10.33"
