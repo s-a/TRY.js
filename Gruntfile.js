@@ -6,6 +6,7 @@ var mkdirp = require('mkdirp');
 var atob = require('atob');
 var url = require('url'); 
 
+
 var Repo = function(setup) {
 	this.user = setup.user;
 	this.name = setup.name;
@@ -90,6 +91,8 @@ var download = function(repository, filename, done) {
 
 module.exports = function(grunt) {
 
+		grunt.option('stack', true); 
+		
 	    grunt.registerTask('fetch-packages', function() {
 			var done = this.async();
 			var all = 0;
@@ -166,5 +169,6 @@ module.exports = function(grunt) {
 			'fetch-packages',
 		 	'mocha_slimer'
 		]);
+
 
 };
