@@ -6,7 +6,7 @@
 
 Production: [<img src="https://travis-ci.org/s-a/TRY.js.svg?branch=master" />](https://travis-ci.org/s-a/try.js "master test state")  
 Development: [<img src="https://travis-ci.org/s-a/TRY.js.svg?branch=development" />](https://travis-ci.org/s-a/TRY.js "development test state")  
-
+[![Donate](http://s-a.github.io/donate/donate.svg)](http://s-a.github.io/donate/)
 
 [TRY.js](http://s-a.github.io/TRY.js/) is supposed to programm a virtual robot which moves in a 3D environment able to pick up and unload objects. The program gives beginners a first insight into the world of computer programming.
 
