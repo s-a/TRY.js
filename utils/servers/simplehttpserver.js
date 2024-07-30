@@ -26,6 +26,11 @@ function handleRequest(request, response) {
 
 	var urlObject = urlParser.parse(request.url, true);
 	var pathname = decodeURIComponent(urlObject.pathname);
+    if (path.normalize(decodeURIComponent(urlObject.pathname)) !== decodeURIComponent(urlObject.pathname)) {
+        response.statusCode = 403;
+        response.end();
+        return;
+    }
 
 	console.log('[' + (new Date()).toUTCString() + '] ' + '"' + request.method + ' ' + pathname + '"');
 
